@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="datetime.js"></script>
+    <script src="js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="version" onclick="support()">v1.0.0 release</div>
+    <main>
+        <div class="timeDateHome" style="user-select: none;">
+            <div class="dayDate strokeHome">День недели</div>
+            <div class="dayNum strokeHome">Месяц 00</div>
+            <div class="lessonTimeHome strokeHome" onclick="openInquiryTab()">До урока:</br>00:00</div>
+        </div>
+        <div class="homeAlert" style="display: none;">
+            <div class="homeAlertText">
+                <span class="warnStyle">Внимание </span> </br>Это предупреждение
+            </div>
+        </div>
+        
+        <div class="maines">
+            <div class="actual">
+                <div class="tytlePages">
+                    Актуалочка
+                </div>
+                <div class="line"></div>
+                </div>
+                <div class="actualPage">
+                <!-- Блок -->
+                <div class="block">
+                    <div class="heading">
+                        <div class="heading1">Дз за 05.09 Пятница</div>
+                        <div class="heading2"></div>
+                    </div>
+
+                    <div class="innerBlock">
+                        <div class="subject"><span>География: </span> выучить определения параграф 1</div>
+                        
+                    </div>
+                </div>
+                <!-- Конец блока -->
+                </div>
+            <div class="tytlePages">
+                Разделы
+            </div>
+            <div class="line"></div>
+            <div class="pages">
+                <button onclick="openDzTab()" class="dzPageBut button">ДЗ</button>
+
+                <button onclick="openInquiryTab()" class="inquiryPageBut button">Рассписание</button>
+
+                <button onclick="openBooksTab()" class="booksPageBut button">Учебники</button>          
+
+                <button onclick="openCalcTab()" class="evaluationsCalc button">Калькулятор оценок</button>          
+
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

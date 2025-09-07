@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебники</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="datetime.js"></script>
+    <script src="js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="version" onclick="support()">v1.0.0 release</div>
+    <header class="top-panel">
+        <div class="logo" style="padding-left: 1%;">Учебники</div>
+        <nav class="menu">
+            <a href="index.html">На главную</a>
+            <a href="inquiry.html">Расписание</a>
+            <a href="dz.html">ДЗ</a>
+            <a href="calc.html">Калькулятор <span class="calkDop">оценок</span></a>
+        </nav>
+        <div class="user-info">
+            <span id="current-time" onclick="openInquiryTab()">До урока <br> 00:00</span>
+        </div>
+    </header>
+    
+    <main class="booksMain">
+        <div class="firstBook">
+            <div class="bookLeft">
+                <div class="nameBook">Алгебра</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('algb')">Скачать</button>
+                <button class="gdzBook" onclick="window.open('https://reshak.ru/reshebniki/algebra/9/makarichev/index.php', '_blank')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">Английский язык</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('angl')">Скачать</button>
+                <button class="gdzBook" onclick="window.open('https://reshak.ru/spotlight9/index.html', '_blank')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">Биология </div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('biol')">Скачать</button>
+                <button class="gdzBook" onclick="window.open('https://reshak.ru/reshebniki/biologia/8/pasechnik_ucheb/index.html', '_blank')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">География</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('geogr')">Скачать</button>
+                <button class="gdzBook" onclick="window.open('https://reshak.ru/reshebniki/geograph/9/alexeev_nikolina/index.html', '_blank')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook" >Геометрия</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" style="background-color: gray;" onclick="downloadFile('geom')">Скачать</button>
+                <button class="gdzBook" onclick="window.open('https://reshak.ru/reshebniki/geometriya/7/atanasyan/index.php', '_blank')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">Информатика</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('inf')">Скачать</button>
+                <button class="gdzBook" onclick="window.open('https://reshak.ru/reshebniki/informatika/9/bosova_uchebnik/index.html', '_blank')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">История</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('istr')" style="background-color: gray;">Скачать</button>
+                <button class="gdzBook" style="background-color: gray; color: #f6f6f6;" onclick="downloadFile('istr')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">Литература <span>(1 часть)</span></div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('litra1')">Скачать</button>
+                <button class="gdzBook" style="background-color: gray; color: #f6f6f6;" onclick="litraGdz()">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">Литература <span>(2 часть)</span></div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('litra2')" style="background-color: gray;">Скачать</button>
+                <button class="gdzBook" style="background-color: gray; color: #f6f6f6;" onclick="downloadFile('istr')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">Обществознание</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('obsh')">Скачать</button>
+                <button class="gdzBook" onclick="window.open('https://reshak.ru/reshebniki/obshestvo/9/bogolubov/index.html', '_blank')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">ОБиЗР</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('obizr')" style="background-color: gray;">Скачать</button>
+                <button class="gdzBook" style="background-color: gray; color: #f6f6f6;" onclick="downloadFile('istr')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">Русский язык</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('rus')">Скачать</button>
+                <button class="gdzBook" onclick="window.open('https://reshak.ru/reshebniki/russkijazik/9/ladizhenskaya/index.html', '_blank')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">Физика</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('fiz')">Скачать</button>
+                <button class="gdzBook" onclick=" fizGdz(), window.open('https://reshak.ru/reshebniki/fizika/9/perishkin/index.html', '_blank') ">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="book">
+            <div class="bookLeft">
+                <div class="nameBook">Химия</div>
+            </div>
+            <div class="bookRight">
+                <button class="downloadBook" onclick="downloadFile('him')">Скачать</button>
+                <button class="gdzBook" onclick="window.open('https://reshak.ru/reshebniki/ximiya/9/gabrielyan/index.html', '_blank')">GDZ</button>
+            </div>    
+        </div>
+
+        <div class="footer"></div>
+    </main>
+</body>

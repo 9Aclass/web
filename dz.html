@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнеие задания</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="datetime.js"></script>
+    <script src="js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="version" onclick="support()">v1.0.0 release</div>
+
+    <header class="top-panel">
+        <div class="logo" >ДЗ</div>
+        <nav class="menu">
+            <a href="index.html">На главную</a>
+            <a href="inquiry.html">Расписание</a>
+            <a href="books.html">Учебники</a>
+            <a href="calc.html">Калькулятор <span class="calkDop">оценок</span></a>
+        </nav>
+        <div class="user-info">
+            <span id="current-time" onclick="openInquiryTab()">До урока <br> 00:00</span>
+        </div>
+    </header>
+    
+    <main class="mainDz">
+        <div class="controllPanel">
+            <div class="dayNum strokeDz">День недели. Месяц 00</div>
+            <div class="controllPanelMain">
+                <div class="quarterSelector">
+                    <button id="left" onclick="qarterVisible('left')">&lt;</button>
+                    <button id="quarter" onclick="toggleMenu(event)">Первая четверть</button>
+                    <button id="right" onclick="qarterVisible('right')">&gt;</button>
+                    <div class="context-menu" id="contextMenu">
+                            <button class="menu-item" onclick="qarterVisible('first')">Четверть 1</button>
+                            <button class="menu-item" onclick="qarterVisible('second')">Четверть 2</button>
+                            <button class="menu-item" onclick="qarterVisible('third')">Четверть 3</button>
+                            <button class="menu-item" onclick="qarterVisible('fourth')">Четверть 4</button>
+                    </div>
+                </div>   
+                <div class="navigMonth">
+                    <div id="strokes" class="strokes">
+                        <div class="stroke1">
+                            <button class="monthButton">Сентябрь</button>
+                            <button class="monthButtonDis">Октябрь</button>
+                            <button class="monthButtonDis">Ноябрь</button>
+                            <button class="monthButtonDis">Декабрь</button>
+                            <button class="monthButtonDis">Январь</button>
+                        </div>
+                        <div class="stroke2">
+                            <button class="monthButtonDis">Февраль</button>
+                            <button class="monthButtonDis">Март</button>
+                            <button class="monthButtonDis">Апрель</button>
+                            <button class="monthButtonDis">Май</button>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <span id="moreTxt" class="moreTxt" onclick="moreTxtRun()">Показать больше</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Первая четверть -->
+        <div id="firstQuarter" class="innerDz">
+            <div class="monthZag">
+                <div class="monthZagTxt">Сентябрь</div>
+                <div class="line"></div>
+            </div>
+
+            <div class="blocks">
+                <!-- Блок -->
+                <div class="block">
+                    <div class="heading">
+                        <div class="heading1">Дз за 05.09 Пятница <div class="new">Новое</div></div>
+                        <div class="heading2"></div>
+                    </div>
+
+                    <div class="innerBlock">
+                        <div class="subject"><span>География: </span> выучить определения параграф 1</div>
+                        
+                    </div>
+                </div>
+                <!-- Конец блока -->
+
+                <!-- Блок -->
+                <div class="block">
+                    <div class="heading">
+                        <div class="heading1">Дз за 04.09 Четверг</div>
+                        <div class="heading2"></div>
+                    </div>
+
+                    <div class="innerBlock">
+                        <div class="subject"><span>Английский: </span> (1 группа) стр 11 упр 6</div>
+                        <div class="lineInBlock"></div>
+                        
+                        <div class="subject"><span>Физика: </span> упражнение 3 параграф 3</div>
+                        <div class="lineInBlock"></div>
+
+                        <div class="subject"><span>Литература: </span> прочитать слово о полку Игореве</div>
+                          
+                    </div>
+                </div>
+                <!-- Конец блока -->
+
+                <!-- Блок -->
+                <div class="block">
+                    <div class="heading">
+                        <div class="heading1">Дз за 03.09 Среда</div>
+                        <div class="heading2"></div>
+                    </div>
+
+                    <!-- Дз по предметам -->
+                    <div class="innerBlock">
+                        <div class="subject"><span>Алгебра: </span> сделать задания на листочке</div>
+                        <div class="lineInBlock"></div>
+
+                        <div class="subject"><span>Физика: </span> параграф 1 упражнение 1</div>
+                    </div>
+                </div>
+                <!-- Конец блока -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Вторая четверть -->
+        <div id="secondQuarter" class="innerDz">
+            <div class="monthZag">
+                <div class="monthZagTxt">Пока ничего нет</div>
+                <div class="line"></div>
+            </div>
+            
+            <div class="blocks">
+                <!-- Блок -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Третья четверть -->
+        <div id="thirdQuarter" class="innerDz">
+            <div class="monthZag">
+                <div class="monthZagTxt">Пока ничего нет</div>
+                <div class="line"></div>
+            </div>
+            
+            <div class="blocks">
+                <!-- Блок -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Четвертая четверть -->
+        <div id="fourthQuarter" class="innerDz">
+            <div class="monthZag">
+                <div class="monthZagTxt">Пока ничего нет</div>
+                <div class="line"></div>
+            </div>
+            
+            <div class="blocks">
+                <!-- Блок -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
