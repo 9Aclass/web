@@ -21,7 +21,7 @@ function litraGdz(){
 }
 
 function fizGdz(){
-    alert("Задание лучше загуглить, на сайте непонятное расположение")
+    alert("Решение лучше загуглить, на сайте непонятное расположение заданий")
 }
 
 function moreTxtRun() {
@@ -294,4 +294,5 @@ function calc(){
 
 function support(){
     alert("По воводу сайта писать на почту: a21class.website@gmail.com")
+
 }
