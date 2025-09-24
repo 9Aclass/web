@@ -1,4 +1,5 @@
 @media screen and (min-width:1400px){
+    
     body{
         margin: 0;
         width: 100%;
@@ -665,14 +666,14 @@
         font-weight: bold;
     }
 
-    .top-panel .menu a { 
+    .menu a { 
         color: white;
         text-decoration: none;
         margin: 0 15px;
         transition: color 0.3s;
     }
 
-    .top-panel .menu a:hover {
+    .menu a:hover {
         color: rgb(60, 128, 224)
     }
 
@@ -685,16 +686,6 @@
         font-weight: 600;
     }
 
-    .content {
-        padding: 20px;
-        margin-top: 20px;
-        background: white;
-        border-radius: 5px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        max-width: 1200px;
-        margin: 20px auto;
-    }
-    
     .context-menu {
         width: 150px;
         display: none;
@@ -704,7 +695,7 @@
         border-radius: 5px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-            
+
     .menu-item {
         padding: 10px 15px;
         border: none;
@@ -718,6 +709,73 @@
     .menu-item:hover {
         background: #f0f0f0;
     }
+
+    .top-panelMini {
+        user-select: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: #333;
+        color: white;
+        display: none;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .headerLeft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+    }
+
+    .headerRight{
+        display: flex;
+        text-align: center;
+        width: 10%;
+
+    }
+
+    .headerLeftTop{
+        width: 100%;
+        height: 50%;
+    }
+
+    .headerLeftButtom{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+
+    .headerLeftButtom .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logoMini {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 6%;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 3%;
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:1399px) and (min-width:1200px){
@@ -1388,14 +1446,14 @@
         font-weight: bold;
     }
 
-    .top-panel .menu a { 
+    .menu a { 
         color: white;
         text-decoration: none;
         margin: 0 15px;
         transition: color 0.3s;
     }
 
-    .top-panel .menu a:hover {
+    .menu a:hover {
         color: rgb(60, 128, 224)
     }
 
@@ -1442,6 +1500,8 @@
     .menu-item:hover {
         background: #f0f0f0;
     }
+
+    .top-panelMini{display: none;}
 
 }
 
@@ -2114,14 +2174,14 @@
         margin-left: 1%;
     }
 
-    .top-panel .menu a { 
+    .menu a { 
         color: white;
         text-decoration: none;
         margin: 0 15px;
         transition: color 0.3s;
     }
 
-    .top-panel .menu a:hover {
+    .menu a:hover {
         color: rgb(60, 128, 224)
     }
 
@@ -2168,6 +2228,8 @@
     .menu-item:hover {
         background: #f0f0f0;
     }
+
+    .top-panelMini{display: none;}
 
 }
 
@@ -2838,14 +2900,14 @@
         font-weight: bold;
     }
 
-    .top-panel .menu a { 
+    .menu a { 
         color: white;
         text-decoration: none;
         margin: 0 15px;
         transition: color 0.3s;
     }
 
-    .top-panel .menu a:hover {
+    .menu a:hover {
         color: rgb(60, 128, 224)
     }
 
@@ -2893,6 +2955,8 @@
         background: #f0f0f0;
     }
 
+    .top-panelMini{display: none;}
+
 }
 
 @media screen and (max-width:749px) and (min-width:666px){
@@ -2908,7 +2972,7 @@
     }
 
     .mainDz{
-        margin-top: 70px;
+        margin-top: 80px;
     }
 
     .footer{
@@ -2933,7 +2997,7 @@
     }
 
     .firstBook{
-        margin-top: 80px;
+        margin-top: 85px;
         display: flex;
         width: 100%;
         height: 55px;
@@ -3548,7 +3612,7 @@
         height: 60px;
         background: #333;
         color: white;
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         text-align: center;
@@ -3564,7 +3628,7 @@
         font-size: 20px;
     }
 
-    .top-panel .menu a { 
+    .menu a { 
         color: white;
         text-decoration: none;
         margin: 0 9px;
@@ -3572,19 +3636,20 @@
         font-size: 16px;
     }
 
-    .top-panel .menu a:hover {
+    .menu a:hover {
         color: rgb(60, 128, 224)
     }
 
     .user-info {
-        display: flex;
+        display: none;
         text-align: center;
         align-items: center;
+        float: left;
         height: 100%;
         height: auto;
-        margin-right: 1%;
+        margin-right: 2%;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .content {
@@ -3621,6 +3686,78 @@
         background: #f0f0f0;
     }
 
+    .top-panelMini {
+        user-select: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .headerLeft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerRight{
+        display: none;
+        text-align: center;
+        margin-right: 1%;
+        width: 10%;
+
+    }
+
+    .headerLeftTop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 60%;
+    }
+
+    .headerLeftButtom{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .headerLeftButtom .menu{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logoMini {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 6%;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 3%;
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:665px) and (min-width:553px){
@@ -3636,7 +3773,7 @@
     }
 
     .mainDz{
-        margin-top: 70px;
+        margin-top: 80px;
     }
 
     .footer{
@@ -3657,7 +3794,7 @@
     }
 
     .booksMain{
-        margin-top: 60px;
+        margin-top: 70px;
         width: 95%;
     }
 
@@ -4277,7 +4414,7 @@
         height: 60px;
         background: #333;
         color: white;
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         text-align: center;
@@ -4293,15 +4430,15 @@
         font-size: 16px;
     }
 
-    .top-panel .menu a { 
+    .menu a { 
         color: white;
         text-decoration: none;
-        margin: 0 5px;
+        margin: 0 9px;
         transition: color 0.3s;
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    .top-panel .menu a:hover {
+    .menu a:hover {
         color: rgb(60, 128, 224)
     }
 
@@ -4350,6 +4487,78 @@
         background: #f0f0f0;
     }
 
+    .top-panelMini {
+        user-select: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .headerLeft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerRight{
+        display: none;
+        text-align: center;
+        margin-right: 1%;
+        width: 10%;
+
+    }
+
+    .headerLeftTop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 60%;
+    }
+
+    .headerLeftButtom{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .headerLeftButtom .menu{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logoMini {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 6%;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 3%;
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:552px) and (min-width:400px){
@@ -4365,7 +4574,7 @@
     }
 
     .mainDz{
-        margin-top: 60px;
+        margin-top: 70px;
     }
 
     .footer{
@@ -4386,7 +4595,7 @@
     }
 
     .booksMain{
-        margin-top: 50px;
+        margin-top: 60px;
         width: 95%;
     }
 
@@ -4439,7 +4648,7 @@
         background-color: rgb(54, 122, 218);
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        font-size: 28px;
+        font-size: 33px;
         
         font-weight: 800;
         color: #f6f6f6;
@@ -4466,7 +4675,7 @@
     }
 
     .strokeHome{
-        padding-top: 10px;
+        padding-top: 14px;
     }
 
 
@@ -4479,7 +4688,7 @@
         user-select: none;
         height: 25px;
         width: 100%;
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 600;
         margin-bottom: 10px;
         margin-top: 20px;
@@ -4511,7 +4720,7 @@
         color: #FFFFFF;
         cursor: pointer;
         display: inline-block;  
-        font-size: 18px;
+        font-size: 23px;
         font-weight: 600;
         line-height: normal;
         margin: 0;
@@ -4523,9 +4732,9 @@
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
-        width: 85%;
+        width: 90%;
         will-change: transform;
-        margin-bottom: 12px;
+        margin-bottom: 11px;
             
     }
 
@@ -4546,7 +4755,7 @@
 
     .strokeDz{
         text-align: center;
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 600;
         user-select: none;
         margin-bottom: 8px;
@@ -4564,7 +4773,7 @@
 
     .quarterSelector{
         margin-top: 10px;
-        height: 30px;
+        height: 40px;
         width: 96%;
         display: flex;
         align-items: center;
@@ -4574,14 +4783,14 @@
     }
 
     #right{
-        width: 23px;
-        height: 23px;
+        width: 28px;
+        height: 28px;
         background-color: rgb(14, 91, 199);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 6px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 600;
         color: #f6f6f6;
         transition: background-color 0.3s ease;
@@ -4589,14 +4798,14 @@
     }
 
     #left{
-        width: 23px;
-        height: 23px;
+        width: 28px;
+        height: 28px;
         background-color: rgb(14, 91, 199);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 6px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 600;
         color: #f6f6f6;
         transition: background-color 0.3s ease;
@@ -4604,16 +4813,16 @@
     }
 
     #quarter{ 
-        width: 70%;
+        width: 75%;
         margin-left: 6px;
         margin-right: 6px;
-        height: 23px;
+        height: 28px;
         background-color: rgb(14, 91, 199);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 6px;
-        font-size: 12px;
+        font-size: 14px;
         transition: background-color 0.3s ease;
         color: #f6f6f6;  
         user-select: none;
@@ -4645,14 +4854,14 @@
 
     .monthButton{
         font-family: 'Roboto', sans-serif;
-        width: 60px;
-        height: 20px;
+        width: 65px;
+        height: 23px;
         background-color: rgb(185, 185, 185);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 5px;
-        font-size: 9px;
+        font-size: 12px;
         color: #202020;
         transition: background-color 0.3s ease;
         margin-right: 3px;
@@ -4666,14 +4875,14 @@
 
     .monthButtonDis{
         font-family: 'Roboto', sans-serif;
-        width: 60px;
-        height: 20px;
+        width: 65px;
+        height: 23px;
         background-color: rgb(185, 185, 185);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 5px;
-        font-size: 9px;
+        font-size: 12px;
         color: #202020;
         transition: background-color 0.3s ease;
         margin-right: 3px;
@@ -4701,7 +4910,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        font-size: 11px;
+        font-size: 14px;
         padding-bottom: 3px;
         color: #616161;
         user-select: none;
@@ -4718,7 +4927,7 @@
     }
 
     .monthZag{
-        font-size: 20px;
+        font-size: 28px;
         margin-top: 8px;
     }
 
@@ -4770,7 +4979,7 @@
         width: 96%;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         
     }
 
@@ -4779,7 +4988,7 @@
     }
 
     .heading{
-        height: 27px;
+        height: 35px;
         display: flex;
         justify-content: center;
         border-top-left-radius: 10px;
@@ -4793,7 +5002,7 @@
         padding-left: 12px;
         width: 90%;
         background-color: rgb(54, 122, 218);
-        font-size: 13px;
+        font-size: 16px;
         color: #f6f6f6;
         font-weight: 600;   
     }
@@ -4814,7 +5023,7 @@
         float: left;
         color: rgb(88, 88, 88);
         margin-top: 5px;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 600;
         margin-bottom: 5px;
     }
@@ -4831,12 +5040,12 @@
         align-items: center;
         color: #f6f6f6;
         background-color: rgb(255, 38, 0);
-        height: 17px;
-        width: 50px;
+        height: 19px;
+        width: 55px;
         border-radius: 6px;
         margin-left: 8px;
         user-select: none;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .version {
@@ -5007,10 +5216,10 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 50px;
+        height: 60px;
         background: #333;
         color: white;
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         text-align: center;
@@ -5023,18 +5232,18 @@
         margin-left: 1%;
         font-size: 1.5rem;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    .top-panel .menu a { 
+    .menu a { 
         color: white;
         text-decoration: none;
-        margin: 0 2px;
+        margin: 0 7px;
         transition: color 0.3s;
-        font-size: 12px;
+        font-size: 15px;
     }
 
-    .top-panel .menu a:hover {
+    .menu a:hover {
         color: rgb(60, 128, 224)
     }
 
@@ -5046,7 +5255,7 @@
         width: auto;
         margin-right: 1%;
         font-weight: 600;
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .content {
@@ -5083,6 +5292,78 @@
         background: #f0f0f0;
     }
 
+    .top-panelMini {
+        user-select: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .headerLeft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerRight{
+        display: none;
+        text-align: center;
+        margin-right: 1%;
+        width: 10%;
+
+    }
+
+    .headerLeftTop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 60%;
+    }
+
+    .headerLeftButtom{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .headerLeftButtom .menu{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logoMini {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 6%;
+        font-size: 21px;
+        font-weight: bold;
+        margin-left: 3%;
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:399px) and (min-width:340px){
@@ -5094,10 +5375,11 @@
         justify-content: center;
         font-family: Arial, sans-serif;
         background-color: #f6f6f6;
+
     }
 
     .mainDz{
-        margin-top: 60px;
+        margin-top: 70px;
     }
 
     .footer{
@@ -5118,7 +5400,7 @@
     }
 
     .booksMain{
-        margin-top: 50px;
+        margin-top: 60px;
         width: 95%;
     }
 
@@ -5169,20 +5451,21 @@
         width: 100%;
         height: auto;
         background-color: rgb(54, 122, 218);
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        font-size: 28px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-size: 33px;
+        
         font-weight: 800;
         color: #f6f6f6;
     }
 
     .homeAlert{
-        margin-top: 2px;
+        margin-top: 3px;
         justify-content: baseline;
         text-align: justify;
         height: auto;
         background-color: #4CAF50;
-        font-size: 14px;
+        font-size: 18px;
         font-family: Arial, sans-serif;
         font-weight: 400;
         padding-top: 2%;
@@ -5193,11 +5476,13 @@
         font-size: 14px;
         color: #f6f6f6;
         display: flex;
+
     }
 
     .strokeHome{
-        padding-top: 10px;
+        padding-top: 14px;
     }
+
 
     .maines{
         width: 100%;
@@ -5208,11 +5493,12 @@
         user-select: none;
         height: 25px;
         width: 100%;
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 600;
         margin-bottom: 10px;
-        margin-top: 15px;
+        margin-top: 20px;
         margin-left: 10px;
+
     }
 
     .line{
@@ -5238,8 +5524,8 @@
         box-sizing: border-box;
         color: #FFFFFF;
         cursor: pointer;
-        display: inline-block;
-        font-size: 18px;
+        display: inline-block;  
+        font-size: 23px;
         font-weight: 600;
         line-height: normal;
         margin: 0;
@@ -5251,9 +5537,10 @@
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
-        width: 85%;
+        width: 90%;
         will-change: transform;
-        margin-bottom: 12px;
+        margin-bottom: 11px;
+            
     }
 
     .button:disabled {
@@ -5262,7 +5549,7 @@
         
     .button:hover {
         background-color: rgb(50, 112, 199);
-        box-shadow: rgba(0, 0, 0, 0.15) 0 8px 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
         transform: translateY(-2px);
     }
         
@@ -5273,7 +5560,7 @@
 
     .strokeDz{
         text-align: center;
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 600;
         user-select: none;
         margin-bottom: 8px;
@@ -5291,7 +5578,7 @@
 
     .quarterSelector{
         margin-top: 10px;
-        height: 30px;
+        height: 40px;
         width: 96%;
         display: flex;
         align-items: center;
@@ -5301,14 +5588,14 @@
     }
 
     #right{
-        width: 23px;
-        height: 23px;
+        width: 28px;
+        height: 28px;
         background-color: rgb(14, 91, 199);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 6px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 600;
         color: #f6f6f6;
         transition: background-color 0.3s ease;
@@ -5316,14 +5603,14 @@
     }
 
     #left{
-        width: 23px;
-        height: 23px;
+        width: 28px;
+        height: 28px;
         background-color: rgb(14, 91, 199);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 6px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 600;
         color: #f6f6f6;
         transition: background-color 0.3s ease;
@@ -5331,16 +5618,16 @@
     }
 
     #quarter{ 
-        width: 70%;
+        width: 75%;
         margin-left: 6px;
         margin-right: 6px;
-        height: 23px;
+        height: 28px;
         background-color: rgb(14, 91, 199);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 6px;
-        font-size: 12px;
+        font-size: 14px;
         transition: background-color 0.3s ease;
         color: #f6f6f6;  
         user-select: none;
@@ -5372,14 +5659,14 @@
 
     .monthButton{
         font-family: 'Roboto', sans-serif;
-        width: 60px;
-        height: 20px;
+        width: 65px;
+        height: 23px;
         background-color: rgb(185, 185, 185);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 5px;
-        font-size: 9px;
+        font-size: 12px;
         color: #202020;
         transition: background-color 0.3s ease;
         margin-right: 3px;
@@ -5389,19 +5676,18 @@
     }
 
     .monthButton:hover{
-        background-color: rgb(199, 199, 199);
-    }
+        background-color: rgb(199, 199, 199);}
 
     .monthButtonDis{
         font-family: 'Roboto', sans-serif;
-        width: 60px;
-        height: 20px;
+        width: 65px;
+        height: 23px;
         background-color: rgb(185, 185, 185);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 5px;
-        font-size: 9px;
+        font-size: 12px;
         color: #202020;
         transition: background-color 0.3s ease;
         margin-right: 3px;
@@ -5429,7 +5715,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        font-size: 11px;
+        font-size: 14px;
         padding-bottom: 3px;
         color: #616161;
         user-select: none;
@@ -5446,7 +5732,7 @@
     }
 
     .monthZag{
-        font-size: 20px;
+        font-size: 28px;
         margin-top: 8px;
     }
 
@@ -5480,6 +5766,7 @@
 
     #fourthQuarter{
         display: none;
+
     }
 
     .blocks{
@@ -5497,7 +5784,8 @@
         width: 96%;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        
     }
 
     .lessonTimeHome{
@@ -5505,7 +5793,7 @@
     }
 
     .heading{
-        height: 27px;
+        height: 35px;
         display: flex;
         justify-content: center;
         border-top-left-radius: 10px;
@@ -5519,7 +5807,7 @@
         padding-left: 12px;
         width: 90%;
         background-color: rgb(54, 122, 218);
-        font-size: 13px;
+        font-size: 16px;
         color: #f6f6f6;
         font-weight: 600;   
     }
@@ -5540,7 +5828,7 @@
         float: left;
         color: rgb(88, 88, 88);
         margin-top: 5px;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 600;
         margin-bottom: 5px;
     }
@@ -5557,19 +5845,19 @@
         align-items: center;
         color: #f6f6f6;
         background-color: rgb(255, 38, 0);
-        height: 17px;
-        width: 50px;
+        height: 19px;
+        width: 55px;
         border-radius: 6px;
         margin-left: 8px;
         user-select: none;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .version {
         position: fixed;
         left: 10px;
         bottom: 10px;
-        font-size: 11px;
+        font-size: 12px;
         color: #999;
         font-family: Arial, sans-serif;
         z-index: 9999;
@@ -5581,7 +5869,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: auto;
     }
 
     /* Учебники */
@@ -5734,10 +6021,10 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 50px;
+        height: 60px;
         background: #333;
         color: white;
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         text-align: center;
@@ -5750,18 +6037,18 @@
         margin-left: 1%;
         font-size: 1.5rem;
         font-weight: bold;
+        font-size: 16px;
+    }
+
+    .menu a { 
+        color: white;
+        text-decoration: none;
+        margin: 0 4px;
+        transition: color 0.3s;
         font-size: 14px;
     }
 
-    .top-panel .menu a { 
-        color: white;
-        text-decoration: none;
-        margin: 0 2px;
-        transition: color 0.3s;
-        font-size: 12px;
-    }
-
-    .top-panel .menu a:hover {
+    .menu a:hover {
         color: rgb(60, 128, 224)
     }
 
@@ -5773,7 +6060,7 @@
         width: auto;
         margin-right: 1%;
         font-weight: 600;
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .content {
@@ -5808,6 +6095,78 @@
             
     .menu-item:hover {
         background: #f0f0f0;
+    }
+
+    .top-panelMini {
+        user-select: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .headerLeft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerRight{
+        display: none;
+        text-align: center;
+        margin-right: 1%;
+        width: 10%;
+
+    }
+
+    .headerLeftTop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 60%;
+    }
+
+    .headerLeftButtom{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .headerLeftButtom .menu{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logoMini {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 6%;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 3%;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -6459,10 +6818,10 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 50px;
+        height: 60px;
         background: #333;
         color: white;
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         text-align: center;
@@ -6475,18 +6834,18 @@
         margin-left: 1%;
         font-size: 1.5rem;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    .top-panel .menu a { 
+    .menu a { 
         color: white;
         text-decoration: none;
-        margin: 0 2px;
+        margin: 0 3px;
         transition: color 0.3s;
         font-size: 12px;
     }
 
-    .top-panel .menu a:hover {
+    .menu a:hover {
         color: rgb(60, 128, 224)
     }
 
@@ -6498,7 +6857,7 @@
         width: auto;
         margin-right: 1%;
         font-weight: 600;
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .content {
@@ -6534,4 +6893,77 @@
     .menu-item:hover {
         background: #f0f0f0;
     }
+
+    .top-panelMini {
+        user-select: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .headerLeft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerRight{
+        display: none;
+        text-align: center;
+        margin-right: 1%;
+        width: 10%;
+
+    }
+
+    .headerLeftTop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 60%;
+    }
+
+    .headerLeftButtom{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .headerLeftButtom .menu{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logoMini {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 6%;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 3%;
+        height: 100%;
+        width: 100%;
+    }
 }
+
