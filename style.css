@@ -12,6 +12,7 @@
     }
 
     .mainDz{
+        position: relative;
         margin-top: 70px;
     }
 
@@ -73,6 +74,7 @@
         flex-direction: column;
     }
 
+
     .timeDateHome{
         text-align: center;
         justify-content: center;
@@ -82,7 +84,6 @@
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         font-size: 40px;
-        
         font-weight: 800;
         color: #f6f6f6;
     }
@@ -414,6 +415,7 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
         border-radius: 18px;
         margin-bottom: 30px;
+        overflow: hidden;
         
     }
 
@@ -433,15 +435,20 @@
     .heading1{
         display: flex;
         align-items: center;
-        padding-left: 12px;
-        width: 90%;
+        padding: 0 12px;
+        width: 100%;
         background-color: rgb(54, 122, 218);
         font-size: 18px;
         color: #f6f6f6;
-        font-weight: 600;   
+        font-weight: 600; 
+        position: relative;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;  
     }
     .heading2{
-        width: 10%;
+        width: 0%;
         background-color: rgb(54, 122, 218);
     }
 
@@ -774,6 +781,83 @@
         margin-left: 3%;
         height: 100%;
         width: 100%;
+    }
+
+
+    .subjectSelector{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .subjectSelectorSubjects{
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subjectSelectButton{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: rgb(54, 122, 218);
+        font-size: 18px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 600;
+        color: #f6f6f6;
+        position: relative;
+    }
+
+    .arrow{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowMini{
+        font-size: 25px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowBlock{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+    }
+
+    .dzWindow{
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    }
+
+    .innerBlockDz{
+        display: none;
     }
 
 }
@@ -1193,6 +1277,7 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
         border-radius: 18px;
         margin-bottom: 30px;
+        overflow: hidden;
         
     }
 
@@ -1212,15 +1297,20 @@
     .heading1{
         display: flex;
         align-items: center;
-        padding-left: 12px;
-        width: 90%;
+        padding: 0 12px;
+        width: 100%;
         background-color: rgb(54, 122, 218);
         font-size: 18px;
         color: #f6f6f6;
-        font-weight: 600;   
+        font-weight: 600;  
+        position: relative;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;   
     }
     .heading2{
-        width: 10%;
+        width: 0%;
         background-color: rgb(54, 122, 218);
     }
 
@@ -1502,6 +1592,83 @@
     }
 
     .top-panelMini{display: none;}
+
+
+    .subjectSelector{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .subjectSelectorSubjects{
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subjectSelectButton{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: rgb(54, 122, 218);
+        font-size: 18px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 600;
+        color: #f6f6f6;
+        position: relative;
+    }
+
+    .arrow{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowMini{
+        font-size: 25px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowBlock{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+    }
+
+    .dzWindow{
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    }
+
+    .innerBlockDz{
+        display: none;
+    }
 
 }
 
@@ -1920,6 +2087,7 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
         border-radius: 18px;
         margin-bottom: 30px;
+        overflow: hidden;
         
     }
 
@@ -1939,15 +2107,20 @@
     .heading1{
         display: flex;
         align-items: center;
-        padding-left: 12px;
-        width: 90%;
+        padding: 0 12px;
+        width: 100%;
         background-color: rgb(54, 122, 218);
         font-size: 18px;
         color: #f6f6f6;
         font-weight: 600;   
+        position: relative;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;  
     }
     .heading2{
-        width: 10%;
+        width: 0%;
         background-color: rgb(54, 122, 218);
     }
 
@@ -2230,6 +2403,83 @@
     }
 
     .top-panelMini{display: none;}
+
+
+    .subjectSelector{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .subjectSelectorSubjects{
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subjectSelectButton{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: rgb(54, 122, 218);
+        font-size: 18px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 600;
+        color: #f6f6f6;
+        position: relative;
+    }
+
+    .arrow{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowMini{
+        font-size: 25px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowBlock{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+    }
+
+    .dzWindow{
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    }
+
+    .innerBlockDz{
+        display: none;
+    }
 
 }
 
@@ -2648,6 +2898,7 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
         border-radius: 18px;
         margin-bottom: 30px;
+        overflow: hidden;
         
     }
 
@@ -2667,15 +2918,20 @@
     .heading1{
         display: flex;
         align-items: center;
-        padding-left: 12px;
-        width: 90%;
+        padding: 0 12px;
+        width: 100%;
         background-color: rgb(54, 122, 218);
         font-size: 18px;
         color: #f6f6f6;
         font-weight: 600;   
+        position: relative;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;  
     }
     .heading2{
-        width: 10%;
+        width: 0%;
         background-color: rgb(54, 122, 218);
     }
 
@@ -2956,6 +3212,83 @@
     }
 
     .top-panelMini{display: none;}
+
+
+    .subjectSelector{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .subjectSelectorSubjects{
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subjectSelectButton{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: rgb(54, 122, 218);
+        font-size: 18px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 600;
+        color: #f6f6f6;
+        position: relative;
+    }
+
+    .arrow{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowMini{
+        font-size: 25px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowBlock{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+    }
+
+    .dzWindow{
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    }
+
+    .innerBlockDz{
+        display: none;
+    }
 
 }
 
@@ -3374,6 +3707,7 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
         border-radius: 18px;
         margin-bottom: 30px;
+        overflow: hidden;
         
     }
 
@@ -3393,15 +3727,20 @@
     .heading1{
         display: flex;
         align-items: center;
-        padding-left: 12px;
-        width: 90%;
+        padding: 0 12px;
+        width: 100%;
         background-color: rgb(54, 122, 218);
         font-size: 18px;
         color: #f6f6f6;
         font-weight: 600;   
+        position: relative;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;  
     }
     .heading2{
-        width: 10%;
+        width: 0%;
         background-color: rgb(54, 122, 218);
     }
 
@@ -3756,6 +4095,83 @@
         margin-left: 3%;
         height: 100%;
         width: 100%;
+    }
+
+
+    .subjectSelector{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .subjectSelectorSubjects{
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subjectSelectButton{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: rgb(54, 122, 218);
+        font-size: 18px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 600;
+        color: #f6f6f6;
+        position: relative;
+    }
+
+    .arrow{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowMini{
+        font-size: 25px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowBlock{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+    }
+
+    .dzWindow{
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    }
+
+    .innerBlockDz{
+        display: none;
     }
 
 }
@@ -4176,7 +4592,7 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
         border-radius: 18px;
         margin-bottom: 30px;
-        
+        overflow: hidden;
     }
 
     .lessonTimeHome{
@@ -4195,15 +4611,20 @@
     .heading1{
         display: flex;
         align-items: center;
-        padding-left: 12px;
-        width: 90%;
+        padding: 0 12px;
+        width: 100%;
         background-color: rgb(54, 122, 218);
         font-size: 18px;
         color: #f6f6f6;
         font-weight: 600;   
+        position: relative;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;  
     }
     .heading2{
-        width: 10%;
+        width: 0%;
         background-color: rgb(54, 122, 218);
     }
 
@@ -4557,6 +4978,83 @@
         margin-left: 3%;
         height: 100%;
         width: 100%;
+    }
+
+
+    .subjectSelector{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .subjectSelectorSubjects{
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subjectSelectButton{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: rgb(54, 122, 218);
+        font-size: 18px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 600;
+        color: #f6f6f6;
+        position: relative;
+    }
+
+    .arrow{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowMini{
+        font-size: 25px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowBlock{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+    }
+
+    .dzWindow{
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    }
+
+    .innerBlockDz{
+        display: none;
     }
 
 }
@@ -4980,6 +5478,7 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         margin-bottom: 25px;
+        overflow: hidden;
         
     }
 
@@ -4999,15 +5498,20 @@
     .heading1{
         display: flex;
         align-items: center;
-        padding-left: 12px;
-        width: 90%;
+        padding: 0 12px;
+        width: 100%;
         background-color: rgb(54, 122, 218);
         font-size: 16px;
         color: #f6f6f6;
-        font-weight: 600;   
+        font-weight: 600;  
+        position: relative;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;   
     }
     .heading2{
-        width: 10%;
+        width: 0%;
         background-color: rgb(54, 122, 218);
     }
 
@@ -5362,6 +5866,83 @@
         margin-left: 3%;
         height: 100%;
         width: 100%;
+    }
+
+
+    .subjectSelector{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+        overflow: hidden;
+        border-radius: 14px;
+    }
+
+    .subjectSelectorSubjects{
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subjectSelectButton{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: rgb(54, 122, 218);
+        font-size: 16px;
+        width: 100%;
+        border-radius: 14px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 600;
+        color: #f6f6f6;
+        position: relative;
+    }
+
+    .arrow{
+        font-size: 25px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowMini{
+        font-size: 20px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowBlock{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+    }
+
+    .dzWindow{
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    }
+
+    .innerBlockDz{
+        display: none;
     }
 
 }
@@ -5785,6 +6366,7 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         margin-bottom: 25px;
+        overflow: hidden;
         
     }
 
@@ -5804,15 +6386,20 @@
     .heading1{
         display: flex;
         align-items: center;
-        padding-left: 12px;
-        width: 90%;
+        padding: 0 12px;
+        width: 100%;
         background-color: rgb(54, 122, 218);
         font-size: 16px;
         color: #f6f6f6;
         font-weight: 600;   
+        position: relative;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;  
     }
     .heading2{
-        width: 10%;
+        width: 0%;
         background-color: rgb(54, 122, 218);
     }
 
@@ -6167,6 +6754,83 @@
         margin-left: 3%;
         height: 100%;
         width: 100%;
+    }
+
+
+    .subjectSelector{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+        overflow: hidden;
+        border-radius: 14px;
+    }
+
+    .subjectSelectorSubjects{
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subjectSelectButton{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: rgb(54, 122, 218);
+        font-size: 16px;
+        width: 100%;
+        border-radius: 14px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 600;
+        color: #f6f6f6;
+        position: relative;
+    }
+
+    .arrow{
+        font-size: 25px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowMini{
+        font-size: 20px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowBlock{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+    }
+
+    .dzWindow{
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    }
+
+    .innerBlockDz{
+        display: none;
     }
 }
 
@@ -6583,6 +7247,7 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         margin-bottom: 20px;
+        overflow: hidden;
     }
 
     .lessonTimeHome{
@@ -6600,16 +7265,20 @@
 
     .heading1{
         display: flex;
-        align-items: center;
-        padding-left: 12px;
-        width: 90%;
+        padding: 0 11px;
+        width: 100%;
         background-color: rgb(54, 122, 218);
         font-size: 13px;
         color: #f6f6f6;
-        font-weight: 600;   
+        font-weight: 600;
+        position: relative;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
     }
     .heading2{
-        width: 10%;
+        width: 0%;
         background-color: rgb(54, 122, 218);
     }
 
@@ -6964,6 +7633,83 @@
         margin-left: 3%;
         height: 100%;
         width: 100%;
+    }
+
+
+.subjectSelector{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .subjectSelectorSubjects{
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subjectSelectButton{
+        display: flex;
+        align-items: center;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: rgb(54, 122, 218);
+        font-size: 12px;
+        width: 100%;
+        border-radius: 10px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 600;
+        color: #f6f6f6;
+        position: relative;
+    }
+
+    .arrow{
+        font-size: 20px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowMini{
+        font-size: 17px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+        user-select: none;
+    }
+
+    .arrowBlock{
+        font-size: 30px;
+        line-height: 1;
+        transform-origin: center;
+        color: white;
+        cursor: pointer;
+        transform: rotate(90deg); 
+    }
+
+    .dzWindow{
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    }
+
+    .innerBlockDz{
+        display: none;
     }
 }
 
