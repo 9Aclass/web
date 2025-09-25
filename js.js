@@ -1,5 +1,275 @@
 var qarterNum = 1;
 
+var dzAlgb = true
+var dzAngl = true
+var dzBiol = true
+var dzGeogr = true
+var dzGeom = true
+var dzInfo = true
+var dzIstor = true
+var dzLitr = true
+var dzObsh = true
+var dzObizr = true
+var dzRus = true
+var dzFiz = true
+var dzHim = true
+var selectVision = true
+
+function selectSubject(){
+    let arrow = document.getElementById("arrow")
+    let innerDz = document.getElementById("subjectSelectorSubjects")
+
+    if(selectVision === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        selectVision = true
+    }
+
+    else if(selectVision === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        selectVision = false
+    }
+}
+
+function dzAlgbF(){
+    let arrow = document.getElementById("algbArrow")
+    let innerDz = document.getElementById("algbDzInner")
+
+    if(dzAlgb === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzAlgb = true
+    }
+
+    else if(dzAlgb === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzAlgb = false
+    }
+}
+
+// Английский
+function dzAnglF(){
+    let arrow = document.getElementById("anglArrow")
+    let innerDz = document.getElementById("anglDzInner")
+
+    if(dzAngl === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzAngl = true
+    }
+    else if(dzAngl === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzAngl = false
+    }
+}
+
+// Биология
+function dzBiolF(){
+    let arrow = document.getElementById("biolArrow")
+    let innerDz = document.getElementById("biolDzInner")
+
+    if(dzBiol === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzBiol = true
+    }
+    else if(dzBiol === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzBiol = false
+    }
+}
+
+// География
+function dzGeogrF(){
+    let arrow = document.getElementById("geogrArrow")
+    let innerDz = document.getElementById("geogrDzInner")
+
+    if(dzGeogr === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzGeogr = true
+    }
+    else if(dzGeogr === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzGeogr = false
+    }
+}
+
+// Геометрия
+function dzGeomF(){
+    let arrow = document.getElementById("geomArrow")
+    let innerDz = document.getElementById("geomInner")
+
+    if(dzGeom === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzGeom = true
+    }
+    else if(dzGeom === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzGeom = false
+    }
+}
+
+// Информатика
+function dzInfoF(){
+    let arrow = document.getElementById("infoArrow")
+    let innerDz = document.getElementById("infoDzInner")
+
+    if(dzInfo === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzInfo = true
+    }
+    else if(dzInfo === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzInfo = false
+    }
+}
+
+// История
+function dzIstorF(){
+    let arrow = document.getElementById("istorArrow")
+    let innerDz = document.getElementById("istorDzInner")
+
+    if(dzIstor === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzIstor = true
+    }
+    else if(dzIstor === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzIstor = false
+    }
+}
+
+// Литература
+function dzLitrF(){
+    let arrow = document.getElementById("litrArrow")
+    let innerDz = document.getElementById("litrDzInner")
+
+    if(dzLitr === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzLitr = true
+    }
+    else if(dzLitr === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzLitr = false
+    }
+}
+
+// Обществознание
+function dzObshF(){
+    let arrow = document.getElementById("obshArrow")
+    let innerDz = document.getElementById("obshDzInner")
+
+    if(dzObsh === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzObsh = true
+    }
+    else if(dzObsh === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzObsh = false
+    }
+}
+
+// ОбиЗр
+function dzObizrF(){
+    let arrow = document.getElementById("obizrArrow")
+    let innerDz = document.getElementById("obizrDzInner")
+
+    if(dzObizr === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzObizr = true
+    }
+    else if(dzObizr === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzObizr = false
+    }
+}
+
+// Русский язык
+function dzRusF(){
+    let arrow = document.getElementById("rusArrow")
+    let innerDz = document.getElementById("rusDzInner")
+
+    if(dzRus === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzRus = true
+    }
+    else if(dzRus === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzRus = false
+    }
+}
+
+// Физика
+function dzFizF(){
+    let arrow = document.getElementById("fizArrow")
+    let innerDz = document.getElementById("fizDzInner")
+
+    if(dzFiz === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzFiz = true
+    }
+    else if(dzFiz === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzFiz = false
+    }
+}
+
+// Химия
+function dzHimF(){
+    let arrow = document.getElementById("himArrow")
+    let innerDz = document.getElementById("himDzInner")
+
+    if(dzHim === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzHim = true
+    }
+    else if(dzHim === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzHim = false
+    }
+}
+
+// ВиС
+function dzVisF(){
+    let arrow = document.getElementById("visArrow")
+    let innerDz = document.getElementById("visDzInner")
+
+    if(dzHim === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzHim = true
+    }
+    else if(dzHim === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzHim = false
+    }
+}
+
 function openDzTab() {
    window.location.href = ("dz.html");
 }
@@ -21,7 +291,7 @@ function litraGdz(){
 }
 
 function fizGdz(){
-    alert("Решение лучше загуглить, на сайте непонятное расположение заданий")
+    alert("Задание лучше загуглить, на сайте непонятное расположение")
 }
 
 function moreTxtRun() {
@@ -294,5 +564,30 @@ function calc(){
 
 function support(){
     alert("По воводу сайта писать на почту: a21class.website@gmail.com")
+}
 
+function saveCheckboxState(subject, isChecked) {
+    localStorage.setItem(`homework_${subject}`, isChecked);
+}
+
+// Функция для загрузки состояния галочки
+function loadCheckboxState(subject) {
+    return localStorage.getItem(`homework_${subject}`) === 'true';
+}
+
+// Функция для обработки клика по галочке
+function toggleHomework(element, subject) {
+    const checkbox = element.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+    saveCheckboxState(subject, isChecked);
+}
+
+// Функция для инициализации состояний галочек при загрузке страницы
+function initializeCheckboxes() {
+    const checkboxes = document.querySelectorAll('.homework-checkbox');
+    checkboxes.forEach(checkbox => {
+        const subject = checkbox.getAttribute('data-subject');
+        const isChecked = loadCheckboxState(subject);
+        checkbox.checked = isChecked;
+    });
 }
