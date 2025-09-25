@@ -55,7 +55,7 @@
                     <button id="left" onclick="qarterVisible('left')">&lt;</button>
                     <button id="quarter" onclick="toggleMenu(event)">Первая четверть</button>
                     <button id="right" onclick="qarterVisible('right')">&gt;</button>
-                    <div class="context-menu" id="contextMenu">
+                    <div class="context-menu" id="contextMenu" style="z-index: 999;">
                             <button class="menu-item" onclick="qarterVisible('first')">Четверть 1</button>
                             <button class="menu-item" onclick="qarterVisible('second')">Четверть 2</button>
                             <button class="menu-item" onclick="qarterVisible('third')">Четверть 3</button>
@@ -610,6 +610,7 @@
     </main>
 </body>
 </html>
+
 
 
 
