@@ -8,7 +8,7 @@
         justify-content: center;
         font-family: Arial, sans-serif;
         background-color: #f6f6f6;
-        background-color: #f6f6f6;
+
     }
 
     .mainDz{
@@ -860,6 +860,125 @@
         display: none;
     }
 
+    .casino{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .cash{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        padding-left: 10px;
+        width: 100%;
+        height: 40px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .slots{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 200px;
+        padding: 15px;
+        background-color: rgb(233, 233, 233);
+        border-radius: 10px;
+    }
+
+    .slots1{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .slots2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .slots3{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .slot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 28px;
+        height: 60px;
+        width: 60px;
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);   
+    }
+
+    .stavka{
+        margin-bottom: 30px;
+    }
+
+    .stavkaInput{
+    height: 28px;
+    width: 160px;
+    background-color: rgb(245, 250, 255);
+    border: 1.5px solid rgb(43, 99, 255);
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 0 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    outline: none;
+    font-weight: 600;
+    }
+
+    .runSlots{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        padding: 4px 0px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100px;
+        will-change: transform;
+        margin-bottom: 12px;
+        margin-left: 10px;
+    }
+
+    .runSlots:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.10) 0 8px 15px;
+        transform: translateY(-1px);
+    }
+        
+    .runSlots:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width:1399px) and (min-width:1200px){
@@ -5352,18 +5471,18 @@
 
     .monthButton{
         font-family: 'Roboto', sans-serif;
-        width: 65px;
+        width: 60px;
         height: 23px;
         background-color: rgb(185, 185, 185);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 5px;
-        font-size: 12px;
+        font-size: 11px;
         color: #202020;
         transition: background-color 0.3s ease;
-        margin-right: 3px;
-        margin-left: 3px;
+        margin-right: 1px;
+        margin-left: 1px;
         border: solid rgb(128, 128, 128) 0px;
         cursor: pointer;
     }
@@ -5373,18 +5492,18 @@
 
     .monthButtonDis{
         font-family: 'Roboto', sans-serif;
-        width: 65px;
+        width: 60px;
         height: 23px;
         background-color: rgb(185, 185, 185);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 5px;
-        font-size: 12px;
+        font-size: 11px;
         color: #202020;
         transition: background-color 0.3s ease;
-        margin-right: 3px;
-        margin-left: 3px;
+        margin-right: 1px;
+        margin-left: 1px;
         border: solid rgb(128, 128, 128) 0px;
         cursor: pointer;
         color: rgb(133, 133, 133);
@@ -6240,18 +6359,18 @@
 
     .monthButton{
         font-family: 'Roboto', sans-serif;
-        width: 65px;
+        width: 55px;
         height: 23px;
         background-color: rgb(185, 185, 185);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 5px;
-        font-size: 12px;
+        font-size: 10px;
         color: #202020;
         transition: background-color 0.3s ease;
-        margin-right: 3px;
-        margin-left: 3px;
+        margin-right: 1px;
+        margin-left: 1px;
         border: solid rgb(128, 128, 128) 0px;
         cursor: pointer;
     }
@@ -6261,18 +6380,18 @@
 
     .monthButtonDis{
         font-family: 'Roboto', sans-serif;
-        width: 65px;
+        width: 55px;
         height: 23px;
         background-color: rgb(185, 185, 185);
         border: none;
         outline: none;
         appearance: none;
         border-radius: 5px;
-        font-size: 12px;
+        font-size: 10px;
         color: #202020;
         transition: background-color 0.3s ease;
-        margin-right: 3px;
-        margin-left: 3px;
+        margin-right: 1px;
+        margin-left: 1px;
         border: solid rgb(128, 128, 128) 0px;
         cursor: pointer;
         color: rgb(133, 133, 133);
@@ -7121,7 +7240,7 @@
 
     .monthButton{
         font-family: 'Roboto', sans-serif;
-        width: 60px;
+        width: 48px;
         height: 20px;
         background-color: rgb(185, 185, 185);
         border: none;
@@ -7131,8 +7250,8 @@
         font-size: 9px;
         color: #202020;
         transition: background-color 0.3s ease;
-        margin-right: 3px;
-        margin-left: 3px;
+        margin-right: 1px;
+        margin-left: 1px;
         border: solid rgb(128, 128, 128) 0px;
         cursor: pointer;
     }
@@ -7143,7 +7262,7 @@
 
     .monthButtonDis{
         font-family: 'Roboto', sans-serif;
-        width: 60px;
+        width: 48px;
         height: 20px;
         background-color: rgb(185, 185, 185);
         border: none;
@@ -7153,8 +7272,8 @@
         font-size: 9px;
         color: #202020;
         transition: background-color 0.3s ease;
-        margin-right: 3px;
-        margin-left: 3px;
+        margin-right: 1px;
+        margin-left: 1px;
         border: solid rgb(128, 128, 128) 0px;
         cursor: pointer;
         color: rgb(133, 133, 133);
@@ -7707,10 +7826,9 @@
     margin-bottom: 10px;
     background-color: #f6f6f6;
     }
-
+    
     .innerBlockDz{
         display: none;
     }
 }
-
 
