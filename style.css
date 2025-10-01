@@ -7832,3 +7832,9 @@
     }
 }
 
+.monthButton a{
+    outline: none;
+    color: #202020;
+    text-decoration: none;
+}
+
