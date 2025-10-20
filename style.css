@@ -143,7 +143,6 @@
     .homeAlert{
         margin-top: 3px;
         justify-content: baseline;
-        text-align: justify;
         height: auto;
         background-color: #4CAF50;
         font-size: 18px;
@@ -152,12 +151,12 @@
         padding-top: 1%;
         padding-bottom: 1%;
         padding-left: 3%;
+        padding-right: 3%;
         background-color: rgb(54, 122, 218);
         border-radius: 15px;
         font-size: 18px;
         color: #f6f6f6;
         display: flex;
-
     }
 
     .strokeHome{
@@ -1139,7 +1138,6 @@
     .homeAlert{
         margin-top: 3px;
         justify-content: baseline;
-        text-align: justify;
         height: auto;
         background-color: #4CAF50;
         font-size: 18px;
@@ -1148,6 +1146,7 @@
         padding-top: 1%;
         padding-bottom: 1%;
         padding-left: 3%;
+        padding-right: 3%;
         background-color: rgb(54, 122, 218);
         border-radius: 15px;
         font-size: 18px;
@@ -1969,7 +1968,6 @@
     .homeAlert{
         margin-top: 3px;
         justify-content: baseline;
-        text-align: justify;
         height: auto;
         background-color: #4CAF50;
         font-size: 18px;
@@ -1978,6 +1976,7 @@
         padding-top: 1%;
         padding-bottom: 1%;
         padding-left: 3%;
+        padding-right: 3%;
         background-color: rgb(54, 122, 218);
         border-radius: 15px;
         font-size: 18px;
@@ -2800,7 +2799,6 @@
     .homeAlert{
         margin-top: 3px;
         justify-content: baseline;
-        text-align: justify;
         height: auto;
         background-color: #4CAF50;
         font-size: 18px;
@@ -2809,6 +2807,7 @@
         padding-top: 1%;
         padding-bottom: 1%;
         padding-left: 3%;
+        padding-right: 3%;
         background-color: rgb(54, 122, 218);
         border-radius: 15px;
         font-size: 18px;
@@ -3629,7 +3628,6 @@
     .homeAlert{
         margin-top: 3px;
         justify-content: baseline;
-        text-align: justify;
         height: auto;
         background-color: #4CAF50;
         font-size: 18px;
@@ -3638,6 +3636,7 @@
         padding-top: 1%;
         padding-bottom: 1%;
         padding-left: 3%;
+        padding-right: 3%;
         background-color: rgb(54, 122, 218);
         border-radius: 15px;
         font-size: 18px;
@@ -4534,7 +4533,6 @@
     .homeAlert{
         margin-top: 3px;
         justify-content: baseline;
-        text-align: justify;
         height: auto;
         background-color: #4CAF50;
         font-size: 18px;
@@ -4543,6 +4541,7 @@
         padding-top: 1%;
         padding-bottom: 1%;
         padding-left: 3%;
+        padding-right: 3%;
         background-color: rgb(54, 122, 218);
         border-radius: 15px;
         font-size: 18px;
@@ -5441,7 +5440,6 @@
     .homeAlert{
         margin-top: 3px;
         justify-content: baseline;
-        text-align: justify;
         height: auto;
         background-color: #4CAF50;
         font-size: 18px;
@@ -5450,6 +5448,7 @@
         padding-top: 2%;
         padding-bottom: 2%;
         padding-left: 3%;
+        padding-right: 3%;
         background-color: rgb(54, 122, 218);
         border-radius: 15px;
         font-size: 14px;
@@ -6352,7 +6351,6 @@
     .homeAlert{
         margin-top: 3px;
         justify-content: baseline;
-        text-align: justify;
         height: auto;
         background-color: #4CAF50;
         font-size: 18px;
@@ -6361,6 +6359,7 @@
         padding-top: 2%;
         padding-bottom: 2%;
         padding-left: 3%;
+        padding-right: 3%;
         background-color: rgb(54, 122, 218);
         border-radius: 15px;
         font-size: 14px;
@@ -7258,7 +7257,6 @@
     .homeAlert{
         margin-top: 2px;
         justify-content: baseline;
-        text-align: justify;
         height: auto;
         background-color: #4CAF50;
         font-size: 14px;
@@ -7267,6 +7265,7 @@
         padding-top: 2%;
         padding-bottom: 2%;
         padding-left: 3%;
+        padding-right: 3%;
         background-color: rgb(54, 122, 218);
         border-radius: 15px;
         font-size: 14px;
@@ -8105,3 +8104,4 @@
     align-items: center;
     width: 100%;
 }
+
