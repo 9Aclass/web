@@ -53,80 +53,6 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
     }
 
- /* Калькулятор оценок */
-
-    .calcMain{
-        height: 100px; 
-        width: 50%; 
-        padding-top: 100px; 
-        font-size: 20px; 
-        color: rgb(88, 88, 88); 
-        display: flex; 
-        justify-content: center; 
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    .blockCalc{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: auto;
-        width: 96%;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-        border-radius: 18px;
-        margin-bottom: 30px;
-        overflow: hidden; 
-    }
-
-    .headingCalc{
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        border-top-left-radius: 18px;
-        border-top-right-radius: 18px;
-        overflow: hidden;
-    }
-
-    .headingCalc1{
-        display: flex;
-        align-items: center;
-        padding: 0 12px;
-        width: 100%;
-        background-color: rgb(54, 122, 218);
-        font-size: 23px;
-        color: #f6f6f6;
-        font-weight: 600; 
-        position: relative;
-        box-sizing: border-box;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;  
-    }
-
-
-    .calcTexts{
-        width: auto; 
-        height: 100px; 
-        margin-top: 200px; 
-        justify-content: center; 
-        align-items: center;  
-        flex-direction: column;
-    }
-
-    .ball{
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        flex-direction: column;
-        text-align: left;
-        width: 100%;
-        height: 100%;
-        margin-left: 10%;
-    }
-
-/* Конец калькулятора */
-
     .timeDateHome{
         text-align: center;
         justify-content: center;
@@ -463,7 +389,7 @@
         flex-direction: column;
         height: auto;
         width: 96%;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.18);
         border-radius: 18px;
         margin-bottom: 30px;
         overflow: hidden;
@@ -1044,6 +970,73 @@
     .sgoLink a{
     color: rgb(42, 130, 255);
     }
+
+     /* Калькулятор оценок */
+
+    .calcMain{
+        height: 100px; 
+        width: 40%; 
+        padding-top: 100px; 
+        font-size: 20px; 
+        color: rgb(88, 88, 88); 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .srBallInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ballPamel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .srBallTxt{
+        text-align: left;
+        align-items: baseline;
+        font-size: 40px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .srBall{
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(13, 78, 168, 1);
+
+    }  
+    
+    .srBallSpan{    
+        margin-right: 6px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #474747ff;
+        user-select: none;
+    }
+
+    .ballMore{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+
+    .lineLeft{
+        width: 4px;
+        background-color: #999;
+        
+    }
+
+/* Конец калькулятора */
     
 }
 
@@ -8108,5 +8101,30 @@
 .SrCh{
     margin-top: -10px;
 }
+
+#firstQuarter{
+    display: none;
+}
+
+#secondQuarter{
+    display: flex;
+}
+
+
+@media screen and (min-width:552px){
+    .heading{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+    }
+
+    .block{
+        border-radius: 15px;
+    }
+}
+
+.block{
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.18);
+}
+
 
 
