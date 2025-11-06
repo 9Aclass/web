@@ -13,6 +13,7 @@ var dzObizr = true
 var dzRus = true
 var dzFiz = true
 var dzHim = true
+var dzTrud = true
 var selectVision = true
 
 
@@ -218,6 +219,23 @@ function dzRusF(){
         arrow.style.transform = "rotate(-90deg)"
         innerDz.style.display = "flex"
         dzRus = false
+    }
+}
+
+// Труды
+function dzTrudF(){
+    let arrow = document.getElementById("trudArrow")
+    let innerDz = document.getElementById("trudDzInner")
+
+    if(dzTrud === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzTrud = true
+    }
+    else if(dzTrud === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzTrud = false
     }
 }
 
@@ -475,6 +493,23 @@ function dzRusF2(){
         arrow.style.transform = "rotate(-90deg)"
         innerDz.style.display = "flex"
         dzRus = false
+    }
+}
+
+// Труды
+function dzTrudF2(){
+    let arrow = document.getElementById("trudArrow2")
+    let innerDz = document.getElementById("trudDzInner2")
+
+    if(dzTrud === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzTrud = true
+    }
+    else if(dzTrud === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzTrud = false
     }
 }
 
