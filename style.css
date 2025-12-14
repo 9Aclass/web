@@ -1026,15 +1026,238 @@
 
     .ballMore{
         display: flex;
-        flex-direction: column;
-        justify-content: center;  
+        font-size: 18px;
+        font-weight: 600;
     }
 
     .lineLeft{
-        width: 4px;
-        background-color: #999;
-        
+        margin-right: 2%;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(212, 212, 212);
+        border-radius: 2px;
     }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: column;
+        height: auto;
+        width: auto;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionTxt{
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 3px;
+        user-select: none;
+        color: #000000;
+        font-size: 28px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .correctionBlocks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correction{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .correctionNeed{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionNeedInner1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+
+    .correctionNeedInner2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .correctionAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .correctionAddBall{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 32px;
+        height: 32px;
+        will-change: transform;
+    }
+
+    .correctionAddBall:disabled {
+        pointer-events: none;
+    }
+        
+    .correctionAddBall:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .correctionAddBall:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .inputBalls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .inputStrokeBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputBallsTxt{
+        width: 92%;
+        font-size: 16px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #e0e0e0ff;
+        border: none;
+        font-weight: 600;
+        outline: none;
+        transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+        color: #4d4d4dff;
+        height: 25px;
+    }
+
+    .inputBallsTxt:focus{
+        background-color: #d6d6d6ff;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .inputBallsTxt::placeholder{
+        color: #949494ff;
+    }
+
+    .inputBallsButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+    }
+
+    .addBallsButton{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        margin-bottom: 10px;
+        height: 35px;
+        margin-top: 10px;
+
+    }
+
+    .addBallsButton:disabled {
+        pointer-events: none;
+    }
+        
+    .addBallsButton:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .addBallsButton:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+
 
 /* Конец калькулятора */
     
@@ -1868,6 +2091,296 @@
     color: rgb(42, 130, 255);
     }
 
+    /* Калькулятор оценок */
+
+    .calcMain{
+        height: 100px; 
+        width: 60%; 
+        padding-top: 100px; 
+        font-size: 20px; 
+        color: rgb(88, 88, 88); 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .srBallInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ballPamel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .srBallTxt{
+        text-align: left;
+        align-items: baseline;
+        font-size: 40px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .srBall{
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(13, 78, 168, 1);
+
+    }  
+    
+    .srBallSpan{    
+        margin-right: 6px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #474747ff;
+        user-select: none;
+    }
+
+    .ballMore{
+        display: flex;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .lineLeft{
+        margin-right: 2%;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(212, 212, 212);
+        border-radius: 2px;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: column;
+        height: auto;
+        width: auto;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionTxt{
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 3px;
+        user-select: none;
+        color: #000000;
+        font-size: 28px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .correctionBlocks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correction{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .correctionNeed{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionNeedInner1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+
+    .correctionNeedInner2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .correctionAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .correctionAddBall{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 32px;
+        height: 32px;
+        will-change: transform;
+    }
+
+    .correctionAddBall:disabled {
+        pointer-events: none;
+    }
+        
+    .correctionAddBall:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .correctionAddBall:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .inputBalls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .inputStrokeBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputBallsTxt{
+        width: 92%;
+        font-size: 16px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #e0e0e0ff;
+        border: none;
+        font-weight: 600;
+        outline: none;
+        transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+        color: #4d4d4dff;
+        height: 25px;
+    }
+
+    .inputBallsTxt:focus{
+        background-color: #d6d6d6ff;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .inputBallsTxt::placeholder{
+        color: #949494ff;
+    }
+
+    .inputBallsButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+    }
+
+    .addBallsButton{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        margin-bottom: 10px;
+        height: 35px;
+        margin-top: 10px;
+
+    }
+
+    .addBallsButton:disabled {
+        pointer-events: none;
+    }
+        
+    .addBallsButton:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .addBallsButton:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+
+
+/* Конец калькулятора */
+
 }
 
 @media screen and (max-width:1199px) and (min-width:890px){
@@ -2697,6 +3210,296 @@
     .sgoLink a{
     color: rgb(42, 130, 255);
     }
+
+    /* Калькулятор оценок */
+
+    .calcMain{
+        height: 100px; 
+        width: 70%; 
+        padding-top: 100px; 
+        font-size: 20px; 
+        color: rgb(88, 88, 88); 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .srBallInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ballPamel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .srBallTxt{
+        text-align: left;
+        align-items: baseline;
+        font-size: 40px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .srBall{
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(13, 78, 168, 1);
+
+    }  
+    
+    .srBallSpan{    
+        margin-right: 6px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #474747ff;
+        user-select: none;
+    }
+
+    .ballMore{
+        display: flex;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .lineLeft{
+        margin-right: 2%;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(212, 212, 212);
+        border-radius: 2px;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: column;
+        height: auto;
+        width: auto;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionTxt{
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 3px;
+        user-select: none;
+        color: #000000;
+        font-size: 28px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .correctionBlocks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correction{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .correctionNeed{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionNeedInner1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+
+    .correctionNeedInner2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .correctionAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .correctionAddBall{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 32px;
+        height: 32px;
+        will-change: transform;
+    }
+
+    .correctionAddBall:disabled {
+        pointer-events: none;
+    }
+        
+    .correctionAddBall:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .correctionAddBall:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .inputBalls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .inputStrokeBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputBallsTxt{
+        width: 92%;
+        font-size: 16px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #e0e0e0ff;
+        border: none;
+        font-weight: 600;
+        outline: none;
+        transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+        color: #4d4d4dff;
+        height: 25px;
+    }
+
+    .inputBallsTxt:focus{
+        background-color: #d6d6d6ff;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .inputBallsTxt::placeholder{
+        color: #949494ff;
+    }
+
+    .inputBallsButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+    }
+
+    .addBallsButton{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        margin-bottom: 10px;
+        height: 35px;
+        margin-top: 10px;
+
+    }
+
+    .addBallsButton:disabled {
+        pointer-events: none;
+    }
+        
+    .addBallsButton:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .addBallsButton:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+
+
+/* Конец калькулятора */
     
 
 }
@@ -3527,6 +4330,295 @@
     .sgoLink a{
     color: rgb(42, 130, 255);
     }
+
+    /* Калькулятор оценок */
+
+    .calcMain{
+        height: 100px; 
+        width: 70%; 
+        padding-top: 100px; 
+        font-size: 20px; 
+        color: rgb(88, 88, 88); 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .srBallInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ballPamel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .srBallTxt{
+        text-align: left;
+        align-items: baseline;
+        font-size: 40px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .srBall{
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(13, 78, 168, 1);
+
+    }  
+    
+    .srBallSpan{    
+        margin-right: 6px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #474747ff;
+        user-select: none;
+    }
+
+    .ballMore{
+        display: flex;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .lineLeft{
+        margin-right: 2%;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(212, 212, 212);
+        border-radius: 2px;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: column;
+        height: auto;
+        width: auto;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionTxt{
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 3px;
+        user-select: none;
+        color: #000000;
+        font-size: 28px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .correctionBlocks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correction{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .correctionNeed{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionNeedInner1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+
+    .correctionNeedInner2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .correctionAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .correctionAddBall{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 32px;
+        height: 32px;
+        will-change: transform;
+    }
+
+    .correctionAddBall:disabled {
+        pointer-events: none;
+    }
+        
+    .correctionAddBall:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .correctionAddBall:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .inputBalls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .inputStrokeBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputBallsTxt{
+        width: 92%;
+        font-size: 16px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #e0e0e0ff;
+        border: none;
+        font-weight: 600;
+        outline: none;
+        transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+        color: #4d4d4dff;
+        height: 25px;
+    }
+
+    .inputBallsTxt:focus{
+        background-color: #d6d6d6ff;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .inputBallsTxt::placeholder{
+        color: #949494ff;
+    }
+
+    .inputBallsButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+    }
+
+    .addBallsButton{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        margin-bottom: 10px;
+        height: 35px;
+        margin-top: 10px;
+
+    }
+
+    .addBallsButton:disabled {
+        pointer-events: none;
+    }
+        
+    .addBallsButton:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .addBallsButton:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+/* Конец калькулятора */
+    
 
 }
 
@@ -4432,6 +5524,295 @@
     color: rgb(42, 130, 255);
     }
 
+    /* Калькулятор оценок */
+
+    .calcMain{
+        height: 100px; 
+        width: 75%; 
+        padding-top: 100px; 
+        font-size: 20px; 
+        color: rgb(88, 88, 88); 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 110px;
+    }
+
+    .srBallInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ballPamel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .srBallTxt{
+        text-align: left;
+        align-items: baseline;
+        font-size: 40px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .srBall{
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(13, 78, 168, 1);
+
+    }  
+    
+    .srBallSpan{    
+        margin-right: 6px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #474747ff;
+        user-select: none;
+    }
+
+    .ballMore{
+        display: flex;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .lineLeft{
+        margin-right: 2%;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(212, 212, 212);
+        border-radius: 2px;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: column;
+        height: auto;
+        width: auto;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionTxt{
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 3px;
+        user-select: none;
+        color: #000000;
+        font-size: 28px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .correctionBlocks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correction{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .correctionNeed{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionNeedInner1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+
+    .correctionNeedInner2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .correctionAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .correctionAddBall{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 32px;
+        height: 32px;
+        will-change: transform;
+    }
+
+    .correctionAddBall:disabled {
+        pointer-events: none;
+    }
+        
+    .correctionAddBall:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .correctionAddBall:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .inputBalls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .inputStrokeBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputBallsTxt{
+        width: 92%;
+        font-size: 16px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #e0e0e0ff;
+        border: none;
+        font-weight: 600;
+        outline: none;
+        transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+        color: #4d4d4dff;
+        height: 25px;
+    }
+
+    .inputBallsTxt:focus{
+        background-color: #d6d6d6ff;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .inputBallsTxt::placeholder{
+        color: #949494ff;
+    }
+
+    .inputBallsButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+    }
+
+    .addBallsButton{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        margin-bottom: 10px;
+        height: 35px;
+        margin-top: 10px;
+
+    }
+
+    .addBallsButton:disabled {
+        pointer-events: none;
+    }
+        
+    .addBallsButton:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .addBallsButton:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+/* Конец калькулятора */
+    
+
 }
 
 @media screen and (max-width:665px) and (min-width:553px){
@@ -5334,6 +6715,294 @@
     .sgoLink a{
     color: rgb(42, 130, 255);
     }
+
+    /* Калькулятор оценок */
+
+    .calcMain{
+        height: 100px; 
+        width: 75%; 
+        padding-top: 100px; 
+        font-size: 20px; 
+        color: rgb(88, 88, 88); 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 110px;
+    }
+
+    .srBallInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ballPamel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .srBallTxt{
+        text-align: left;
+        align-items: baseline;
+        font-size: 40px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .srBall{
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(13, 78, 168, 1);
+
+    }  
+    
+    .srBallSpan{    
+        margin-right: 6px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #474747ff;
+        user-select: none;
+    }
+
+    .ballMore{
+        display: flex;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .lineLeft{
+        margin-right: 2%;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(212, 212, 212);
+        border-radius: 2px;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: column;
+        height: auto;
+        width: auto;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionTxt{
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 3px;
+        user-select: none;
+        color: #000000;
+        font-size: 28px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .correctionBlocks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correction{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .correctionNeed{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionNeedInner1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+
+    .correctionNeedInner2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .correctionAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .correctionAddBall{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 32px;
+        height: 32px;
+        will-change: transform;
+    }
+
+    .correctionAddBall:disabled {
+        pointer-events: none;
+    }
+        
+    .correctionAddBall:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .correctionAddBall:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .inputBalls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+    }
+
+    .inputStrokeBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputBallsTxt{
+        width: 92%;
+        font-size: 16px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #e0e0e0ff;
+        border: none;
+        font-weight: 600;
+        outline: none;
+        transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+        color: #4d4d4dff;
+        height: 25px;
+    }
+
+    .inputBallsTxt:focus{
+        background-color: #d6d6d6ff;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .inputBallsTxt::placeholder{
+        color: #949494ff;
+    }
+
+    .inputBallsButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+    }
+
+    .addBallsButton{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        margin-bottom: 10px;
+        height: 35px;
+        margin-top: 10px;
+
+    }
+
+    .addBallsButton:disabled {
+        pointer-events: none;
+    }
+        
+    .addBallsButton:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .addBallsButton:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+/* Конец калькулятора */
 
 }
 
@@ -6245,6 +7914,293 @@
     color: rgb(42, 130, 255);
     }
 
+    /* Калькулятор оценок */
+
+    .calcMain{
+        height: 100px; 
+        width: 90%; 
+        font-size: 20px; 
+        color: rgb(88, 88, 88); 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .srBallInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ballPamel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .srBallTxt{
+        text-align: left;
+        align-items: baseline;
+        font-size: 34px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .srBall{
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(13, 78, 168, 1);
+
+    }  
+    
+    .srBallSpan{    
+        margin-right: 6px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #474747ff;
+        user-select: none;
+    }
+
+    .ballMore{
+        display: flex;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .lineLeft{
+        margin-right: 2%;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(212, 212, 212);
+        border-radius: 2px;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: column;
+        height: auto;
+        width: auto;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionTxt{
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 3px;
+        user-select: none;
+        color: #000000;
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .correctionBlocks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correction{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .correctionNeed{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionNeedInner1{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 14px;
+        float: left;
+        text-align: left;
+        width: 50%;
+        font-size: 17px;
+    }
+
+    .correctionNeedInner2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-right: 14px;
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .correctionAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .correctionAddBall{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 29px;
+        height: 29px;
+        will-change: transform;
+    }
+
+    .correctionAddBall:disabled {
+        pointer-events: none;
+    }
+        
+    .correctionAddBall:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .correctionAddBall:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .inputBalls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 15px;
+        border: none;
+    }
+
+    .inputStrokeBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputBallsTxt{
+        width: 88%;
+        font-size: 18px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #e0e0e0ff;
+        border: none;
+        font-weight: 600;
+        outline: none;
+        transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+        color: #4d4d4dff;
+        height: 22px;
+    }
+
+    .inputBallsTxt:focus{
+        background-color: #d6d6d6ff;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .inputBallsTxt::placeholder{
+        color: #949494ff;
+    }
+
+    .inputBallsButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+    }
+
+    .addBallsButton{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        margin-bottom: 10px;
+        height: 35px;
+        margin-top: 10px;
+
+    }
+
+    .addBallsButton:disabled {
+        pointer-events: none;
+    }
+        
+    .addBallsButton:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .addBallsButton:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+/* Конец калькулятора */
 
 }
 
@@ -7154,6 +9110,294 @@
     .sgoLink a{
     color: rgb(42, 130, 255);
     }
+
+    /* Калькулятор оценок */
+
+    .calcMain{
+        height: 100px; 
+        width: 95%; 
+        font-size: 20px; 
+        color: rgb(88, 88, 88); 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .srBallInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ballPamel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .srBallTxt{
+        text-align: left;
+        align-items: baseline;
+        font-size: 30px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .srBall{
+        display: flex;
+        align-items: center;
+        font-size: 45px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(13, 78, 168, 1);
+
+    }  
+    
+    .srBallSpan{    
+        margin-right: 6px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #474747ff;
+        user-select: none;
+    }
+
+    .ballMore{
+        display: flex;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .lineLeft{
+        margin-right: 2%;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(212, 212, 212);
+        border-radius: 2px;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: column;
+        height: auto;
+        width: auto;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionTxt{
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 3px;
+        user-select: none;
+        color: #000000;
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .correctionBlocks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correction{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .correctionNeed{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionNeedInner1{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 14px;
+        float: left;
+        text-align: left;
+        width: 50%;
+        font-size: 17px;
+    }
+
+    .correctionNeedInner2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-right: 14px;
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .correctionAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .correctionAddBall{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 29px;
+        height: 29px;
+        will-change: transform;
+    }
+
+    .correctionAddBall:disabled {
+        pointer-events: none;
+    }
+        
+    .correctionAddBall:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .correctionAddBall:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .inputBalls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 15px;
+        border: none;
+    }
+
+    .inputStrokeBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputBallsTxt{
+        width: 88%;
+        font-size: 16px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #e0e0e0ff;
+        border: none;
+        font-weight: 600;
+        outline: none;
+        transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+        color: #4d4d4dff;
+        height: 20px;
+    }
+
+    .inputBallsTxt:focus{
+        background-color: #d6d6d6ff;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .inputBallsTxt::placeholder{
+        color: #949494ff;
+    }
+
+    .inputBallsButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+    }
+
+    .addBallsButton{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        margin-bottom: 10px;
+        height: 35px;
+        margin-top: 10px;
+
+    }
+
+    .addBallsButton:disabled {
+        pointer-events: none;
+    }
+        
+    .addBallsButton:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .addBallsButton:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+/* Конец калькулятора */
 }
 
 @media screen and (max-width:339px) and (min-width:100px){
@@ -8054,6 +10298,294 @@
     .sgoLink a{
     color: rgb(42, 130, 255);
     }
+
+    /* Калькулятор оценок */
+
+    .calcMain{
+        height: 100px; 
+        width: 98%; 
+        font-size: 20px; 
+        color: rgb(88, 88, 88); 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 35px;
+    }
+
+    .srBallInner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ballPamel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .srBallTxt{
+        text-align: left;
+        align-items: baseline;
+        font-size: 30px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .srBall{
+        display: flex;
+        align-items: center;
+        font-size: 45px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(13, 78, 168, 1);
+
+    }  
+    
+    .srBallSpan{    
+        margin-right: 6px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #474747ff;
+        user-select: none;
+    }
+
+    .ballMore{
+        display: flex;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .lineLeft{
+        margin-right: 2%;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(212, 212, 212);
+        border-radius: 2px;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: column;
+        height: auto;
+        width: auto;
+    }
+
+    .correctionInner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionTxt{
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 3px;
+        user-select: none;
+        color: #000000;
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .correctionBlocks{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correction{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .correctionNeed{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .correctionNeedInner1{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 14px;
+        float: left;
+        text-align: left;
+        width: 50%;
+        font-size: 17px;
+    }
+
+    .correctionNeedInner2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-right: 14px;
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .correctionAll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .correctionAddBall{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 29px;
+        height: 29px;
+        will-change: transform;
+    }
+
+    .correctionAddBall:disabled {
+        pointer-events: none;
+    }
+        
+    .correctionAddBall:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .correctionAddBall:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .inputBalls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 15px;
+        border: none;
+    }
+
+    .inputStrokeBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inputBallsTxt{
+        width: 88%;
+        font-size: 16px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: #e0e0e0ff;
+        border: none;
+        font-weight: 600;
+        outline: none;
+        transition: all 800ms cubic-bezier(.23, 1, 0.32, 1);
+        color: #4d4d4dff;
+        height: 20px;
+    }
+
+    .inputBallsTxt:focus{
+        background-color: #d6d6d6ff;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    .inputBallsTxt::placeholder{
+        color: #949494ff;
+    }
+
+    .inputBallsButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+    }
+
+    .addBallsButton{
+        appearance: none;
+        background-color: rgb(54, 122, 218);
+        border: 2px solid rgb(54, 122, 218);
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        margin-bottom: 10px;
+        height: 35px;
+        margin-top: 10px;
+
+    }
+
+    .addBallsButton:disabled {
+        pointer-events: none;
+    }
+        
+    .addBallsButton:hover {
+        background-color: rgb(50, 112, 199);
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 10px;
+        transform: translateY(-1px);
+    }
+        
+    .addBallsButton:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+/* Конец калькулятора */
 }
 
 .monthButton a{
