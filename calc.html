@@ -7,24 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <script src="datetime.js"></script>
     <script src="js.js"></script>
+    <script src="calculator.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="top-panelMini">
-            <dvi class="headerLeft">
+            <div class="headerLeft">
                 <div class="headerLeftTop">
                     <div class="logoMini" >Калькулятор оценок</div>
                 </div>
 
-                <dvi class="headerLeftButtom">
+                <div class="headerLeftButtom">
                     <nav class="menu">
                         <a href="index.html">На главную</a>
                         <a href="books.html">Учебники</a>
                         <a href="dz.html">ДЗ</a>
                         <a href="inquiry.html">Расписание</a>
                     </nav>
-                </dvi>
-            </dvi>
+                </div>
+            </div>
             <div class="headerRight">
                 <div class="user-info">
             <span id="current-time" onclick="openInquiryTab()">До урока <br> 00:00</span>
@@ -44,23 +45,107 @@
         </div>
     </header>
 
-    <main class="calcMain" style="margin-top: 200px;">
-        <div class="calcTexts">
-            Здесь должен был быть калькулятор оценок но </br>
-            Тут пока ничего нет.</br>
-            Потом когда-нибудь.</br>
-            Может к концу ноября... 
+    <main class="calcMain" style="margin-top: 350px;">
+        <div class="srBallInner">
+            <div class="ballPanel"> 
+                <div class="strokeDz srBallTxt">Средний балл</div>
+                <div id="srBall" class="srBall"><span class="srBallSpan">▶</span>0,00</div>
+            </div>
+
+            <div class="ballMore">
+                <div class="lineLeft"></div>
+                <div class="ballMoreTxt">
+                    <div class="itogBall">Итоговый балл: <span>0,00</span></div>
+                    <div class="BallsCount">Всего оценок: <span>0,00</span></div>
+                </div>
+            </div>
         </div>
-        <div class="image-block">
-            <img src="images/9a_image.jpg" style="width: 250px; height: auto; margin-top: 30px;" alt="К.рута ф.от">
-            <img src="images/IMG-20250929-WA0022.jpg" style="width: 250px; height: auto; margin-top: 30px;" alt="К.рута ф.от">
-        </div> 
 
+        <div class="inputBalls">
+            <div class="ballicons"></div>
+            <div class="inputStrokeBlock">
+                <input id="inputBalls" type="number" placeholder="Введите оценки" class="inputBallsTxt">
+            </div>
+            <div class="inputBallsButtons">
+                <button class="addBalls addBallsButton" onclick="global();">Расчитать</button>
+            </div>
+        </div>
+
+        <div class="correctionInner">
+            <div class="correctionTxt">Исправление оценок</div>
+            <div class="line" style="width: 100%; margin-top: 5px;"></div>
+            <div class="correctionBlocks">
+                <div class="correction"> <!-- Исправление на 5 -->
+                    <div class="heading" onclick="openOn5()">
+                            <div class="heading1">Исправить на 5</div>
+                    </div>
+                
+                    <div class="correctionAll">
+                           <div class="correctionNeed">
+                            <div class="correctionNeedInner1">Нужно 5 еще: <span id="correction5Need5Num">0</span></div>
+                            <div class="correctionNeedInner2">
+                                <button class="correctionAddBall">+</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="correction"> <!-- Исправление на 4 -->
+                    <div class="heading" onclick="dzAlgbF()">
+                            <div class="heading1">Исправить на 4</div>
+                    </div>
+                    
+                    <div class="correctionAll">
+                        <div class="correctionNeed">
+                            <div class="correctionNeedInner1">Нужно 5 еще: <span id="correction4Need5Num">0</span></div>
+                            <div class="correctionNeedInner2">
+                                <button class="correctionAddBall">+</button>
+                            </div>
+                        </div>
+
+                        <div class="lineInBlock" style="width: 95%;"></div>
+
+                        <div class="correctionNeed">
+                            <div class="correctionNeedInner1">Нужно 4 еще: <span id="correction4Need4Num">0</span></div>
+                            <div class="correctionNeedInner2">
+                                <button class="correctionAddBall">+</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="correction"> <!-- Исправление на 3 -->
+                    <div class="heading" onclick="dzAlgbF()">
+                            <div class="heading1">Исправить на 3</div>
+                    </div>
+
+                    <div class="correctionAll">
+                        <div class="correctionNeed">
+                            <div class="correctionNeedInner1">Нужно 5 еще: <span id="correction3Need5Num">0</span></div>
+                            <div class="correctionNeedInner2">
+                                <button class="correctionAddBall">+</button>
+                            </div>
+                        </div>
+
+                            <div class="lineInBlock" style="width: 95%;"></div>
+
+                        <div class="correctionNeed">
+                            <div class="correctionNeedInner1">Нужно 4 еще: <span id="correction3Need4Num">0</span></div>
+                            <div class="correctionNeedInner2">
+                                <button class="correctionAddBall">+</button>
+                            </div>
+                        </div>
+
+                        <div class="lineInBlock" style="width: 95%;"></div>
+
+                        <div class="correctionNeed">
+                            <div class="correctionNeedInner1">Нужно 3 еще: <span id="correction3Need3Num">0</span></div>
+                            <div class="correctionNeedInner2">
+                                <button class="correctionAddBall">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-
-
-
-
-
-
-
