@@ -17,7 +17,6 @@ var dzTrud = true
 var selectVision = true
 
 
-
 function selectSubject(){
     let arrow = document.getElementById("arrow")
     let innerDz = document.getElementById("subjectSelectorSubjects")
@@ -852,13 +851,6 @@ async function downloadFile(subject){
     }
 }
 
-function calc(){
-    alert("Такой страницы пока нет. Потом сделаю, к концу четверти")
-}
-
-function support(){
-    alert("По воводу сайта писать на почту: a21class.website@gmail.com")
-}
 
 function saveCheckboxState(subject, isChecked) {
     localStorage.setItem(`homework_${subject}`, isChecked);
