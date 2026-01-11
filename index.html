@@ -15,38 +15,38 @@
         <div class="timeDateHome" style="user-select: none;">
             <div class="dayDate strokeHome">День недели</div>
             <div class="dayNum strokeHome">Месяц 00</div>
-            <div class="lessonTimeHomeЪ strokeHome" onclick="openInquiryTab()" style="padding-bottom: 20px;">Рассписание звонков временно изменено</br></div>
+            <div class="lessonTimeHome strokeHome" onclick="openInquiryTab()" style="padding-bottom: 20px;">00:00</br></div>
         </div>
-        <div class="homeAlert" style="display:s;">
+        <div class="homeAlert" style="display:none;">
             <div class="homeAlertText">
                 <span class="warnStyle">Внимание! </span></br> Новогоднее мероприятие для 9-х будет 27 декабря с 13:00 "Новогодний бал". Дискотека с 17:00-20:00. </br> <a href="calc.html" style="color: rgba(45, 247, 45, 1);">Калькулятор оценок</a> теперь работает!
             </div>
         </div>
         
         <div class="maines">
-            <div class="actual">
+            <div class="actual" style="display: none;">
                 <div class="tytlePages">
                     Актуалочка
                 </div>
                 <div class="line"></div>
             </div>
-            <div class="actualPage">
+            <div class="actualPage" style="display: none;">
 
-            <!-- Блок -->
-            <div class="block">
-                <div class="heading">
-                    <div class="heading1">Дз за 19.12 Пятница<div class="new">Новое</div></div>
-                    <div class="heading2"></div>
+                <!-- Блок -->
+                <div class="block">
+                    <div class="heading">
+                        <div class="heading1">Дз за 19.12 Пятница<div class="new">Новое</div></div>
+                        <div class="heading2"></div>
+                    </div>
+
+                    <div class="innerBlock">
+                        <div class="subject"><span>Физика: </span> 23 параграф 23 упр, подготовиться к кр по первой главе</div>
+                        <div class="lineInBlock"></div>
+
+                        <div class="subject"><span>География: </span> 29-37 стр рабочая тетрадь</div>
+                    </div>
                 </div>
-
-                <div class="innerBlock">
-                    <div class="subject"><span>Физика: </span> 23 параграф 23 упр, подготовиться к кр по первой главе</div>
-                    <div class="lineInBlock"></div>
-
-                    <div class="subject"><span>География: </span> 29-37 стр рабочая тетрадь</div>
-                </div>
-            </div>
-            <!-- Конец блока -->
+                <!-- Конец блока -->
 
             </div>
             <div class="tytlePages">
@@ -61,11 +61,7 @@
                 <button onclick="openBooksTab()" class="booksPageBut button">Учебники</button>          
 
                 <button onclick="openCalcTab()" class="evaluationsCalc button">Калькулятор оценок</button>   
-
-                <div class="lineInBlock" style="margin-top: 20px;"></div>  
-                
             </div>
-            <div class="sgoLink subject">Вход в сго:<a target="_blank" style="padding-left: 4px;" href="https://sgo.e-yakutia.ru/authorize/login-pass"> https://sgo.e-yakutia.ru/authorize/login-pass</a></div>
         </div>
     </main>
 </body>
