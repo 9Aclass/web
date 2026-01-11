@@ -65,11 +65,11 @@
                 <div class="navigMonth">
                     <div id="strokes" class="strokes">
                         <div class="stroke1">
-                            <button class="monthButton"><a href="#sent">Сентябрь</a></button>
-                            <button class="monthButton"><a href="#okt">Октябрь</a></button>
-                            <button class="monthButton"><a href="#noya">Ноябрь</a></button>
-                            <button class="monthButton"><a href="#deck">Декабрь</a></button>
-                            <button class="monthButtonDis">Январь</button>
+                            <button class="monthButton" onclick="qarterVisible('first')"><a href="#sent">Сентябрь</a></button>
+                            <button class="monthButton" onclick="qarterVisible('first')"><a href="#okt">Октябрь</a></button>
+                            <button class="monthButton" onclick="qarterVisible('second')"><a href="#noya">Ноябрь</a></button>
+                            <button class="monthButton" onclick="qarterVisible('second')"><a href="#deck">Декабрь</a></button>
+                            <button class="monthButton" onclick="qarterVisible('third')"><a href="#yan">Январь</a></button>
                         </div>
                         <div class="stroke2">
                             <button class="monthButtonDis">Февраль</button>
@@ -972,6 +972,8 @@
                         </div>
 
                         <div id="algbDzInner2" class="innerBlock innerBlockDz">
+                            <div class="subject"><span>Понедельник 22.12:</span> 77, 84</div>
+                            <div class="lineInBlock"></div>
                             <div class="subject"><span>Вторник 02.12:</span> СГО</div>
                             <div class="lineInBlock"></div>
                             <div class="subject"><span>Понедельник 24.11:</span> СГО</div>
@@ -1171,6 +1173,8 @@
                             <div class="heading2"></div>
                         </div>
                         <div id="fizDzInner2" class="innerBlock innerBlockDz">
+                            <div class="subject"><span> Вторник 23.12: </span> сделать упр 24 24 параграф или 28 упр 28 параграф</div>
+                            <div class="lineInBlock"></div>
                             <div class="subject"><span> Пятница 19.12: </span> 23 параграф 23 упр, подготовиться к кр по первой главе</div>
                             <div class="lineInBlock"></div>
                             <div class="subject"><span> Среда 17.12: </span> 22 параграф 22 упражнение</div>
@@ -1221,10 +1225,36 @@
             </div>
             
             <div class="blocks">
+             <!-- Блок -->
+            <div class="block">
+                <div class="heading">
+                    <div class="heading1">Дз за 23.12 Вторник</div>
+                    <div class="heading2"></div>
+                </div>
+
+                <div class="innerBlock">
+                    <div class="subject"><span>Физика: </span> сделать упр 24 24 параграф или 28 упр 28 параграф</div>
+                </div>
+            </div>
+            <!-- Конец блока -->
+
             <!-- Блок -->
             <div class="block">
                 <div class="heading">
-                    <div class="heading1">Дз за 19.12 Пятница<div class="new">Новое</div></div>
+                    <div class="heading1">Дз за 22.12 Понедельник</div>
+                    <div class="heading2"></div>
+                </div>
+
+                <div class="innerBlock">
+                    <div class="subject"><span>Алгебра: </span> 77, 84</div>
+                </div>
+            </div>
+            <!-- Конец блока -->
+
+            <!-- Блок -->
+            <div class="block">
+                <div class="heading">
+                    <div class="heading1">Дз за 19.12 Пятница</div>
                     <div class="heading2"></div>
                 </div>
 
@@ -1658,13 +1688,186 @@
             </div>
         </div>
 
-        <!-- Третья четверть -->
+       <!-- Третья четверть -->
         <div id="thirdQuarter" class="innerDz">
-            <div class="monthZag">
-                <div class="monthZagTxt">Пока ничего нет</div>
+            <!-- Отдельные предметы -->
+            <div class="subjectSelector">
+                <div class="subjectSelectButton" onclick="selectSubject3()" style="cursor: pointer;">
+                    <span class="button-text">Выбрать предмет</span>
+                    <span id="arrow3" class="arrow">></span>
+                </div>
+
+                <div id="subjectSelectorSubjects3" class="subjectSelectorSubjects">
+
+                    <div class="block dzWindow" style="box-shadow: none; margin-top: 10px;"> <!-- Алгебра-->
+                        <div class="heading" onclick="dzAlgbF3()" style="cursor: pointer;">
+                            <div class="heading1">Алгебра<span id="algbArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="algbDzInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Английский -->
+                        <div class="heading" onclick="dzAnglF3()" style="cursor: pointer;">
+                            <div class="heading1">Английский <span id="anglArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="anglDzInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Биология-->
+                        <div class="heading" onclick="dzBiolF3()" style="cursor: pointer;">
+                            <div class="heading1">Биология <span id="biolArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="biolDzInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- География-->
+                        <div class="heading" onclick="dzGeogrF3()" style="cursor: pointer;">
+                            <div class="heading1">География <span id="geogrArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="geogrDzInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Геометрия -->   
+                        <div class="heading" onclick="dzGeomF3()" style="cursor: pointer;">
+                            <div class="heading1">Геометрия <span id="geomArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+                        
+                        <div id="geomInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Информатика -->
+                        <div class="heading" onclick="dzInfoF3()" style="cursor: pointer;">
+                            <div class="heading1">Информатика <span id="infoArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="infoDzInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- История -->
+                        <div class="heading" onclick="dzIstorF3()" style="cursor: pointer;">
+                            <div class="heading1">История<span id="istorArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+                        
+                        <div id="istorDzInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Литература -->
+                        <div class="heading" onclick="dzLitrF3()" style="cursor: pointer;">
+                            <div class="heading1">Литература <span id="litrArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="litrDzInner3" class="innerBlock innerBlockDz">
+                            
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Обществознание -->
+                        <div class="heading" onclick="dzObshF3()" style="cursor: pointer;">
+                            <div class="heading1">Обществознание <span id="obshArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="obshDzInner3" class="innerBlock innerBlockDz">
+                            
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- ОбиЗр -->
+                        <div class="heading" onclick="dzObizrF3()" style="cursor: pointer;">
+                            <div class="heading1">ОбиЗр <span id="obizrArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="obizrDzInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Русский язык -->
+                        <div class="heading" onclick="dzRusF3()" style="cursor: pointer;">
+                            <div class="heading1">Русский язык <span id="rusArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="rusDzInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Труды -->
+                        <div class="heading" onclick="dzTrudF3()" style="cursor: pointer;">
+                            <div class="heading1">Труды <span id="trudArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="trudDzInner3" class="innerBlock innerBlockDz">
+
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Физика -->
+                        <div class="heading" onclick="dzFizF3()" style="cursor: pointer;">
+                            <div class="heading1">Физика <span id="fizArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+                        <div id="fizDzInner3" class="innerBlock innerBlockDz">
+                            
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- Химия -->
+                        <div class="heading" onclick="dzHimF3()" style="cursor: pointer;">
+                            <div class="heading1">Химия <span id="himArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+                        <div id="himDzInner3" class="innerBlock innerBlockDz">
+                        
+                        </div>
+                    </div> 
+
+                    <div class="block dzWindow" style="box-shadow: none;"> <!-- ВиС -->
+                        <div class="heading" onclick="dzVisF3()" style="cursor: pointer;">
+                            <div class="heading1">ВиС <span id="visArrow3" class="arrowMini">></span></div>
+                            <div class="heading2"></div>
+                        </div>
+
+                        <div id="visDzInner3" class="innerBlock innerBlockDz">
+                        
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="monthZag" id="yan">
+                <div class="monthZagTxt">Январь</div>
                 <div class="line"></div>
             </div>
-            
             <div class="blocks">
                 <!-- Блок -->
 
