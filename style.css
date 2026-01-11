@@ -10639,8 +10639,13 @@
 }
 
 #secondQuarter{
+    display: none;
+}
+
+#thirdQuarter{
     display: flex;
 }
+
 
 
 @media screen and (min-width:552px){
