@@ -673,7 +673,7 @@
     .context-menu {
         width: 150px;
         display: none;
-        position: absolute;
+        position: fixed;
         background: white;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -10662,6 +10662,3 @@
 .block{
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
 }
-
-
-
