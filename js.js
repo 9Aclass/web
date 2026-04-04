@@ -1,4 +1,4 @@
-var qarterNum = 3;
+var qarterNum = 4;
 
 var dzAlgb = true
 var dzAngl = true
@@ -837,6 +837,280 @@ function dzVisF3(){
     }
 }
 
+// Четвертая четверть
+
+function selectSubject4(){
+    let arrow = document.getElementById("arrow4")
+    let innerDz = document.getElementById("subjectSelectorSubjects4")
+
+    if(selectVision === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        selectVision = true
+    }
+
+    else if(selectVision === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        selectVision = false
+    }
+}
+
+function dzAlgbF4(){
+    let arrow = document.getElementById("algbArrow4")
+    let innerDz = document.getElementById("algbDzInner4")
+
+    if(dzAlgb === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzAlgb = true
+    }
+
+    else if(dzAlgb === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzAlgb = false
+    }
+}
+
+// Английский
+function dzAnglF4(){
+    let arrow = document.getElementById("anglArrow4")
+    let innerDz = document.getElementById("anglDzInner4")
+
+    if(dzAngl === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzAngl = true
+    }
+    else if(dzAngl === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzAngl = false
+    }
+}
+
+// Биология
+function dzBiolF4(){
+    let arrow = document.getElementById("biolArrow4")
+    let innerDz = document.getElementById("biolDzInner4")
+
+    if(dzBiol === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzBiol = true
+    }
+    else if(dzBiol === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzBiol = false
+    }
+}
+
+// География
+function dzGeogrF4(){
+    let arrow = document.getElementById("geogrArrow4")
+    let innerDz = document.getElementById("geogrDzInner4")
+
+    if(dzGeogr === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzGeogr = true
+    }
+    else if(dzGeogr === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzGeogr = false
+    }
+}
+
+// Геометрия
+function dzGeomF4(){
+    let arrow = document.getElementById("geomArrow4")
+    let innerDz = document.getElementById("geomInner4")
+
+    if(dzGeom === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzGeom = true
+    }
+    else if(dzGeom === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzGeom = false
+    }
+}
+
+// Информатика
+function dzInfoF4(){
+    let arrow = document.getElementById("infoArrow4")
+    let innerDz = document.getElementById("infoDzInner4")
+
+    if(dzInfo === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzInfo = true
+    }
+    else if(dzInfo === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzInfo = false
+    }
+}
+
+// История
+function dzIstorF4(){
+    let arrow = document.getElementById("istorArrow4")
+    let innerDz = document.getElementById("istorDzInner4")
+
+    if(dzIstor === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzIstor = true
+    }
+    else if(dzIstor === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzIstor = false
+    }
+}
+
+// Литература
+function dzLitrF4(){
+    let arrow = document.getElementById("litrArrow4")
+    let innerDz = document.getElementById("litrDzInner4")
+
+    if(dzLitr === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzLitr = true
+    }
+    else if(dzLitr === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzLitr = false
+    }
+}
+
+// Обществознание
+function dzObshF4(){
+    let arrow = document.getElementById("obshArrow4")
+    let innerDz = document.getElementById("obshDzInner4")
+
+    if(dzObsh === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzObsh = true
+    }
+    else if(dzObsh === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzObsh = false
+    }
+}
+
+// ОбиЗр
+function dzObizrF4(){
+    let arrow = document.getElementById("obizrArrow4")
+    let innerDz = document.getElementById("obizrDzInner4")
+
+    if(dzObizr === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzObizr = true
+    }
+    else if(dzObizr === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzObizr = false
+    }
+}
+
+// Русский язык
+function dzRusF4(){
+    let arrow = document.getElementById("rusArrow4")
+    let innerDz = document.getElementById("rusDzInner4")
+
+    if(dzRus === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzRus = true
+    }
+    else if(dzRus === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzRus = false
+    }
+}
+
+// Труды
+function dzTrudF4(){
+    let arrow = document.getElementById("trudArrow4")
+    let innerDz = document.getElementById("trudDzInner4")
+
+    if(dzTrud === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzTrud = true
+    }
+    else if(dzTrud === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzTrud = false
+    }
+}
+
+// Физика
+function dzFizF4(){
+    let arrow = document.getElementById("fizArrow4")
+    let innerDz = document.getElementById("fizDzInner4")
+
+    if(dzFiz === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzFiz = true
+    }
+    else if(dzFiz === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzFiz = false
+    }
+}
+
+// Химия
+function dzHimF4(){
+    let arrow = document.getElementById("himArrow4")
+    let innerDz = document.getElementById("himDzInner4")
+
+    if(dzHim === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzHim = true
+    }
+    else if(dzHim === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzHim = false
+    }
+}
+
+// ВиС
+function dzVisF4(){
+    let arrow = document.getElementById("visArrow4")
+    let innerDz = document.getElementById("visDzInner4")
+
+    if(dzHim === false){
+        arrow.style.transform = "rotate(90deg)"
+        innerDz.style.display = "none"
+        dzHim = true
+    }
+    else if(dzHim === true){
+        arrow.style.transform = "rotate(-90deg)"
+        innerDz.style.display = "flex"
+        dzHim = false
+    }
+}
+
 function openDzTab() {
    window.location.href = ("dz.html");
 }
@@ -970,14 +1244,14 @@ function qarterVisible(direction){
 function toggleMenu(event) {
     const menu = document.getElementById('contextMenu');
     const button = document.getElementById('quarter');
-    
+
     event.stopPropagation();
-    
+
     if (menu.style.display === 'block') {
         menu.style.display = 'none';
     } else {
-        menu.style.top = (event.clientY + window.scrollY) + 'px';
-        menu.style.left = (event.clientX + window.scrollX) + 'px';
+        menu.style.top = event.clientY + 'px';
+        menu.style.left = event.clientX + 'px';
         menu.style.display = 'block';
     }
 }
