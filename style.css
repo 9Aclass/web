@@ -8204,7 +8204,7 @@
 
 }
 
-@media screen and (max-width:399px) and (min-width:340px){
+@media screen and (max-width:399px) and (min-width:320px){
     body{
         margin: 0;
         width: 100%;
@@ -9400,7 +9400,7 @@
 /* Конец калькулятора */
 }
 
-@media screen and (max-width:339px) and (min-width:100px){
+@media screen and (max-width:319px) and (min-width:100px){
     body{
         margin: 0;
         width: 100%;
@@ -10672,4 +10672,3 @@
     background-color: rgb(231, 231, 231);
     border-radius: 20px;
 }
-
