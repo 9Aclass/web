@@ -10672,3 +10672,19 @@
     background-color: rgb(231, 231, 231);
     border-radius: 20px;
 }
+
+.result-page-instant-sharebox{
+    display: none;
+}
+
+
+.actualPage{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.scroll{
+    display: inline-block; 
+    white-space: nowrap;
+}
